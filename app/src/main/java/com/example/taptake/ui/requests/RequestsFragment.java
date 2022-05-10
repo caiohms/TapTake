@@ -11,8 +11,7 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.taptake.databinding.FragmentRequestsBinding;
 
 public class RequestsFragment extends Fragment {
-
-private FragmentRequestsBinding binding;
+    private FragmentRequestsBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
             ViewGroup container, Bundle savedInstanceState) {

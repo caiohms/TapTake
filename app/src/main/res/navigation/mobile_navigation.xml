@@ -24,6 +24,12 @@
         tools:layout="@layout/fragment_university" />
 
     <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.taptake.ui.requests.RequestsFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_requests" />
+
+    <fragment
         android:id="@+id/nav_requests"
         android:name="com.example.taptake.ui.requests.RequestsFragment"
         android:label="@string/menu_requests"

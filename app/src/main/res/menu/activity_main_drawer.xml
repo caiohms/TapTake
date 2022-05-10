@@ -7,7 +7,7 @@
 
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_home"
+            android:icon="@drawable/ic_baseline_restaurant_24"
             android:title="@string/menu_home" />
         <item
             android:id="@+id/nav_profile"
@@ -18,6 +18,10 @@
             android:id="@+id/nav_university"
             android:icon="@drawable/ic_menu_university"
             android:title="@string/menu_university" />
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="@string/menu_cart" />
         <item
             android:id="@+id/nav_requests"
             android:icon="@drawable/ic_menu_requests"

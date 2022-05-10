@@ -8,8 +8,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
+    <string name="menu_home">Restaurantes</string>
     <string name="menu_profile">Editar Perfil</string>
     <string name="menu_university">Universidades</string>
+    <string name="menu_cart">Carrinho</string>
     <string name="menu_requests">Pedidos</string>
+    <string name="seja_bem_vindo">Seja bem-vindo!</string>
+    <string name="entrar">Entrar</string>
 </resources>
