@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.taptake.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.taptake.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_university"
+        android:name="com.example.taptake.ui.university.UniversityFragment"
+        android:label="@string/menu_university"
+        tools:layout="@layout/fragment_university" />
+
+    <fragment
+        android:id="@+id/nav_cart"
+        android:name="com.example.taptake.ui.requests.RequestsFragment"
+        android:label="@string/menu_cart"
+        tools:layout="@layout/fragment_requests" />
+
+    <fragment
+        android:id="@+id/nav_requests"
+        android:name="com.example.taptake.ui.requests.RequestsFragment"
+        android:label="@string/menu_requests"
+        tools:layout="@layout/fragment_requests" />
+</navigation>
