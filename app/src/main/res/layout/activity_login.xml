@@ -24,11 +24,12 @@
         android:id="@+id/imageView3"
         android:layout_width="397dp"
         android:layout_height="575dp"
-        android:layout_marginBottom="88dp"
+        android:layout_marginBottom="160dp"
         android:contentDescription="@string/fundo2"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/fundologoloagind" />
 
@@ -44,6 +45,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView2"
         app:layout_constraintVertical_bias="1.0" />
@@ -106,7 +108,7 @@
         android:layout_width="397dp"
         android:layout_height="52dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="88dp"
         android:background="#00000000"
         android:text="@string/create_account"
         android:textStyle="bold"
@@ -114,6 +116,39 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogar" />
+
+    <TextView
+        android:id="@+id/textErrorEmail"
+        android:layout_width="300dp"
+        android:layout_height="29dp"
+        android:text="@string/menssageEmailError"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintVertical_bias="0.357"
+        />
+
+    <TextView
+        android:id="@+id/textErrorPassowrd"
+        android:layout_width="283dp"
+        android:layout_height="28dp"
+        android:text="@string/messagePasswordError"
+        android:textColor="#FF0000"
+        android:textSize="16sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintVertical_bias="0.304"
+        />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

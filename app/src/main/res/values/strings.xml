@@ -26,4 +26,6 @@
     <string name="fundo2">fundo2</string>
     <string name="image2splash">Image2Splash</string>
     <string name="email">Email</string>
+    <string name="menssageEmailError">Você precisa inserir um e-mail válido!</string>
+    <string name="messagePasswordError">Você precisa inserir uma senha válida!</string>
 </resources>
