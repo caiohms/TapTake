@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="449dp"
-        android:layout_height="896dp"
+        android:layout_width="392dp"
+        android:layout_height="855dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,10 +30,10 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.298"
+        app:layout_constraintVertical_bias="0.126"
         app:srcCompat="@drawable/fundologoloagind"
         tools:ignore="MissingConstraints" />
 
@@ -70,7 +70,7 @@
         android:id="@+id/imageView6"
         android:layout_width="692dp"
         android:layout_height="479dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="32dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.535"

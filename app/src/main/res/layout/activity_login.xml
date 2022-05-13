@@ -121,7 +121,7 @@
         android:id="@+id/textErrorEmail"
         android:layout_width="300dp"
         android:layout_height="29dp"
-        android:text="@string/menssageEmailError"
+        android:text="@string/messageEmailError"
         android:textColor="#FF0000"
         android:textSize="16sp"
         android:visibility="invisible"

@@ -33,15 +33,24 @@ public class Login extends AppCompatActivity {
     }
 
     public void openHomeScreen() {
+        boolean error = false;
         EditText editTextEmail = findViewById(R.id.editTextTextEmailAddress);
         EditText editTextPassword = findViewById(R.id.editTextTextPassword);
         TextView textErrorEmail = findViewById(R.id.textErrorEmail);
         TextView textErrorPassowrd = findViewById(R.id.textErrorPassowrd);
+        textErrorEmail.setVisibility(View.INVISIBLE);
+        textErrorPassowrd.setVisibility(View.INVISIBLE);
 
-        if (editTextEmail.getText().toString().trim().equals("") || editTextPassword.getText().toString().trim().equals("")) {
+        if (editTextEmail.getText().toString().trim().equals("")) {
             textErrorEmail.setVisibility(View.VISIBLE);
+            error = true;
+        }
+        if (editTextPassword.getText().toString().trim().equals("")){
             textErrorPassowrd.setVisibility(View.VISIBLE);
-        } else {
+            error = true;
+        }
+
+        if(!error) {
             textErrorEmail.setVisibility(View.INVISIBLE);
             textErrorPassowrd.setVisibility(View.INVISIBLE);
             Intent intent = new Intent(this, HomeScreen.class);
