@@ -7,12 +7,32 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Restaurantes</string>
     <string name="menu_profile">Editar Perfil</string>
     <string name="menu_university">Universidades</string>
     <string name="menu_cart">Carrinho</string>
     <string name="menu_requests">Pedidos</string>
     <string name="seja_bem_vindo">Seja bem-vindo!</string>
+    <string name="create_account">Crie uma conta clicando aqui</string>
+    <string name="login" />
+    <string name="forget_password" />
+    <string name="remember_me" />
+    <string name="enter_phone_number" />
+    <string name="e_mail">E-mail</string>
+    <string name="loginText">LOGIN</string>
     <string name="entrar">Entrar</string>
+    <string name="password">Password</string>
+    <string name="logar">Logar</string>
+    <string name="fundo2">fundo2</string>
+    <string name="image2splash">Image2Splash</string>
+    <string name="email">Email</string>
+    <string name="messageEmailError">Você precisa inserir um e-mail válido!</string>
+    <string name="messagePasswordError">Você precisa inserir uma senha válida!</string>
+    <string name="messageLoginError">Seu email ou senha estão incorretos!</string>
+    <string name="messagePasswordErrorSecondary">Você precisa confimar sua senha!</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="nome">Nome</string>
+    <string name="messageNameError">Você precisa inserir um nome válido!</string>
 </resources>

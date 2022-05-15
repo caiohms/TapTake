@@ -10,63 +10,38 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="397dp"
-        android:layout_height="856dp"
+        android:layout_width="392dp"
+        android:layout_height="855dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/fundo"
         tools:ignore="ContentDescription" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="423dp"
-        android:layout_height="623dp"
+        android:id="@+id/imageView4"
+        android:layout_width="693dp"
+        android:layout_height="658dp"
+        android:contentDescription="@string/image2splash"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.347"
+        app:layout_constraintVertical_bias="0.126"
         app:srcCompat="@drawable/fundologoloagind"
-        tools:ignore="ContentDescription" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="450dp"
-        android:layout_height="424dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="@+id/imageView6"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.125"
-        app:srcCompat="@drawable/logo"
-        tools:ignore="ContentDescription" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="310dp"
-        android:layout_height="65dp"
-        android:gravity="center"
-        android:text="@string/seja_bem_vindo"
-        android:textColor="#000000"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.614"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.166" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/buttonLoading"
-        android:layout_width="288dp"
-        android:layout_height="69dp"
+        android:layout_width="294dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="104dp"
         android:backgroundTint="#ffb500"
         android:text="@string/entrar"
         android:textAlignment="center"
@@ -75,9 +50,33 @@
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/singUp"
+        android:layout_width="367dp"
+        android:layout_height="55dp"
+        android:layout_centerHorizontal="true"
+        android:background="#00000000"
+        android:text="@string/create_account"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6"
-        app:layout_constraintVertical_bias="0.204" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLoading"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="692dp"
+        android:layout_height="479dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/logo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
