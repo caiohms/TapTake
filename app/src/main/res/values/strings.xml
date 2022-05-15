@@ -28,6 +28,7 @@
     <string name="email">Email</string>
     <string name="messageEmailError">Você precisa inserir um e-mail válido!</string>
     <string name="messagePasswordError">Você precisa inserir uma senha válida!</string>
+    <string name="messageLoginError">Seu email ou senha estão incorretos!</string>
     <string name="messagePasswordErrorSecondary">Você precisa confimar sua senha!</string>
     <string name="cadastro">Cadastro</string>
     <string name="cadastrar">Cadastrar</string>

@@ -6,24 +6,26 @@
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/drawable/custom_button.xml" value="0.3025" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/drawable/edit_text.xml" value="0.336" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/drawable/edit_text2.xml" value="0.3045" />
+        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/drawable/ic_baseline_account_box_24.xml" value="0.292" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/drawable/ic_baseline_restaurant_24.xml" value="0.205" />
+        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/drawable/ic_menu_home.xml" value="0.1725" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/drawable/ic_menu_requests.xml" value="0.239" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/drawable/ic_menu_university.xml" value="0.2845" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/drawable/side_nav_bar.xml" value="0.239" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/activity_home_screen.xml" value="0.22" />
-        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/activity_sing_up.xml" value="0.33" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/app_bar_home_screen.xml" value="0.2601851851851852" />
-        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/content_home_screen.xml" value="0.33" />
+        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/content_home_screen.xml" value="0.1574074074074074" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/fragment_cart.xml" value="0.30085470085470084" />
-        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/fragment_home.xml" value="0.25" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/fragment_requests.xml" value="0.1574074074074074" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/fragment_university.xml" value="0.1574074074074074" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/layout/nav_header_home_screen.xml" value="0.1574074074074074" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/menu/activity_main_drawer.xml" value="0.33" />
         <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/menu/home_screen.xml" value="0.30085470085470084" />
-        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2895" />
+        <entry key="..\:/Users/alex-/AndroidStudioProjects/TapTake/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1725" />
       </map>
     </option>
   </component>

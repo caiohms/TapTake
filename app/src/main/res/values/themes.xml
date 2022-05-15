@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.TapTake" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#ffb500</item>
+        <item name="colorPrimary">#FFC107</item>
         <item name="colorPrimaryVariant">#673AB7</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->

@@ -31,37 +31,26 @@ public class Login extends AppCompatActivity {
             insetsController.setSystemBarsBehavior(insetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
         }
     }
-
     public void openHomeScreen() {
         boolean error = false;
         EditText editTextEmail = findViewById(R.id.editTextTextEmailAddress);
         EditText editTextPassword = findViewById(R.id.editTextTextPassword);
-        TextView textErrorEmail = findViewById(R.id.textErrorEmail);
-        TextView textErrorPassowrd = findViewById(R.id.textErrorPassowrd);
-        textErrorEmail.setVisibility(View.INVISIBLE);
-        textErrorPassowrd.setVisibility(View.INVISIBLE);
+        TextView textLoginEmail = findViewById(R.id.textLoginEmail);
+        textLoginEmail.setVisibility(View.INVISIBLE);
 
-        if (editTextEmail.getText().toString().trim().equals("")) {
-            textErrorEmail.setVisibility(View.VISIBLE);
+        if (editTextEmail.getText().toString().trim().equals("") || editTextPassword.getText().toString().trim().equals("")) {
+            textLoginEmail.setVisibility(View.VISIBLE);
             error = true;
         }
-        if (editTextPassword.getText().toString().trim().equals("")){
-            textErrorPassowrd.setVisibility(View.VISIBLE);
-            error = true;
-        }
+        if(!error){
+            textLoginEmail.setVisibility(View.INVISIBLE);
 
-        if(!error) {
-            textErrorEmail.setVisibility(View.INVISIBLE);
-            textErrorPassowrd.setVisibility(View.INVISIBLE);
             Intent intent = new Intent(this, HomeScreen.class);
             startActivity(intent);
         }
     }
-
     public void openSingUpScreen() {
         Intent intent = new Intent(this, SingUp.class);
         startActivity(intent);
     }
-
-
 }

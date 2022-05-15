@@ -83,7 +83,7 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintVertical_bias="0.788" />
+        app:layout_constraintVertical_bias="0.486" />
 
     <Button
         android:id="@+id/buttonLogar"
@@ -108,7 +108,7 @@
         android:layout_width="397dp"
         android:layout_height="52dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="100dp"
         android:background="#00000000"
         android:text="@string/create_account"
         android:textStyle="bold"
@@ -118,26 +118,10 @@
         app:layout_constraintTop_toBottomOf="@+id/buttonLogar" />
 
     <TextView
-        android:id="@+id/textErrorEmail"
-        android:layout_width="300dp"
-        android:layout_height="29dp"
-        android:text="@string/messageEmailError"
-        android:textColor="#FF0000"
-        android:textSize="16sp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintVertical_bias="0.357"
-        />
-
-    <TextView
-        android:id="@+id/textErrorPassowrd"
+        android:id="@+id/textLoginEmail"
         android:layout_width="283dp"
         android:layout_height="28dp"
-        android:text="@string/messagePasswordError"
+        android:text="@string/messageLoginError"
         android:textColor="#FF0000"
         android:textSize="16sp"
         android:visibility="invisible"
@@ -146,9 +130,7 @@
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.304"
-        />
-
+        app:layout_constraintVertical_bias="0.456" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
