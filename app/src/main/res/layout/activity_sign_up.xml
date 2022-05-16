@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SingUp">
+    tools:context=".SignUp">
 
     <ImageView
         android:id="@+id/fundoSingUp"
@@ -39,7 +39,7 @@
         android:layout_height="83dp"
         android:layout_marginTop="16dp"
         android:gravity="center"
-        android:text="@string/cadastro"
+        android:text="@string/textSignUpPage"
         android:textColor="#FFFFFF"
         android:textSize="50sp"
         android:textStyle="bold"
@@ -54,7 +54,7 @@
         android:background="@drawable/edit_text"
         android:drawableEnd="@drawable/ic_baseline_account_box_24"
         android:ems="10"
-        android:hint="@string/nome"
+        android:hint="@string/name"
         android:inputType="text"
         android:padding="20dp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
@@ -182,7 +182,7 @@
         android:layout_height="68dp"
         android:layout_marginBottom="64dp"
         android:backgroundTint="#ffb500"
-        android:text="@string/cadastrar"
+        android:text="@string/SignUp"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"

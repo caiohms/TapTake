@@ -43,7 +43,7 @@
         android:layout_height="68dp"
         android:layout_marginBottom="104dp"
         android:backgroundTint="#ffb500"
-        android:text="@string/entrar"
+        android:text="@string/log_in"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
