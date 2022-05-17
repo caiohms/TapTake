@@ -12,8 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.taptake.R;
-import com.example.taptake.SignUp;
 import com.example.taptake.databinding.FragmentHomeBinding;
+import com.example.taptake.ui.restaurant.RestaurantFragment;
 
 public class HomeFragment extends Fragment {
 
@@ -51,7 +51,7 @@ public class HomeFragment extends Fragment {
     }
 
     public void openRestaurant() {
-        Intent intent = new Intent(HomeFragment.this.getActivity(), SignUp.class);
+        Intent intent = new Intent(HomeFragment.this.getActivity(), RestaurantFragment.class);
         startActivity(intent);
     }
 
