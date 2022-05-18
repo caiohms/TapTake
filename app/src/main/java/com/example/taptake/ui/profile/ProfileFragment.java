@@ -21,6 +21,7 @@ public class ProfileFragment extends Fragment {
         ProfileViewModel profileViewModel =
                 new ViewModelProvider(this).get(ProfileViewModel.class);
 
+
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
