@@ -52,9 +52,9 @@ public class HomeFragment extends Fragment {
 
     public void openRestaurant(int id) {
         Intent intent = new Intent(HomeFragment.this.getActivity(), RestaurantScreen.class);
-        Bundle b = new Bundle();
-        b.putInt("restaurant", id);
-        intent.putExtras(b);
+        Bundle bundle = new Bundle();
+        bundle.putInt("restaurant", id);
+        intent.putExtras(bundle);
         startActivity(intent);
     }
 
