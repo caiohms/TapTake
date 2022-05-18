@@ -13,7 +13,7 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash_screen);
 
         Button buttonLoading = findViewById(R.id.buttonLoading);
         buttonLoading.setOnClickListener(view -> openLoginScreen());
@@ -35,7 +35,7 @@ public class SplashScreen extends AppCompatActivity {
         startActivity(intent);
     }
     public void openSingUpScreen(){
-        Intent intent = new Intent(this, SingUp.class);
+        Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
 

@@ -8,6 +8,7 @@
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/carView1"
         android:layout_width="156dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,6 +27,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/carView2"
         android:layout_width="156dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -43,6 +45,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/carView3"
         android:layout_width="156dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -61,6 +64,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/carView4"
         android:layout_width="156dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,6 +83,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/carView5"
         android:layout_width="156dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -97,6 +102,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/carView6"
         android:layout_width="156dp"
         android:layout_height="96dp"
         app:layout_constraintBottom_toBottomOf="parent"

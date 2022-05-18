@@ -11,12 +11,12 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SingUp extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sing_up);
+        setContentView(R.layout.activity_sign_up);
 
         Button buttonCadastrar = findViewById(R.id.buttonCadastrar);
         buttonCadastrar.setOnClickListener(view -> openHomeScreen());

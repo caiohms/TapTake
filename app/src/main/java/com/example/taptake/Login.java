@@ -21,8 +21,8 @@ public class Login extends AppCompatActivity {
         Button buttonLogar = findViewById(R.id.buttonLogar);
         buttonLogar.setOnClickListener(view -> openHomeScreen());
 
-        Button singUp = findViewById(R.id.singUp);
-        singUp.setOnClickListener(view -> openSingUpScreen());
+        Button signUp = findViewById(R.id.singUp);
+        signUp.setOnClickListener(view -> openSingUpScreen());
 
         getWindow().setDecorFitsSystemWindows(false);
         final WindowInsetsController insetsController = getWindow().getInsetsController();
@@ -44,13 +44,12 @@ public class Login extends AppCompatActivity {
         }
         if(!error){
             textLoginEmail.setVisibility(View.INVISIBLE);
-
             Intent intent = new Intent(this, HomeScreen.class);
             startActivity(intent);
         }
     }
     public void openSingUpScreen() {
-        Intent intent = new Intent(this, SingUp.class);
+        Intent intent = new Intent(this, SignUp.class);
         startActivity(intent);
     }
 }
