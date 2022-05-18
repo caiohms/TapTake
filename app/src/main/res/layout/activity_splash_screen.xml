@@ -53,7 +53,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/singUp"
+        android:id="@+id/signUp"
         android:layout_width="367dp"
         android:layout_height="55dp"
         android:layout_centerHorizontal="true"

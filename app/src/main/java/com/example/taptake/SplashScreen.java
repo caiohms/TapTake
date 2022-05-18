@@ -21,10 +21,10 @@ public class SplashScreen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.buttonLoading.setOnClickListener(view -> openLoginScreen());
-        binding.singUp.setOnClickListener(view -> openSignUpScreen());
+        binding.signUp.setOnClickListener(view -> openSignUpScreen());
 
         getWindow().setDecorFitsSystemWindows(false);
-//
+
         final WindowInsetsController insetsController = getWindow().getInsetsController();
 
         if (insetsController != null) {

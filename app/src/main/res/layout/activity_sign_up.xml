@@ -7,7 +7,7 @@
     tools:context=".SignUp">
 
     <ImageView
-        android:id="@+id/fundoSingUp"
+        android:id="@+id/fundoSignUp"
         android:layout_width="403dp"
         android:layout_height="852dp"
         android:scaleType="centerCrop"
@@ -25,11 +25,11 @@
         android:layout_width="512dp"
         android:layout_height="656dp"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/fundoSingUp"
-        app:layout_constraintEnd_toEndOf="@+id/fundoSingUp"
+        app:layout_constraintBottom_toBottomOf="@+id/fundoSignUp"
+        app:layout_constraintEnd_toEndOf="@+id/fundoSignUp"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fundoSingUp"
+        app:layout_constraintTop_toTopOf="@+id/fundoSignUp"
         app:layout_constraintVertical_bias="0.387"
         app:srcCompat="@drawable/fundologoloagind" />
 
@@ -45,7 +45,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/fundoSingUp" />
+        app:layout_constraintTop_toTopOf="@+id/fundoSignUp" />
 
     <EditText
         android:id="@+id/editTextName"
@@ -57,7 +57,7 @@
         android:hint="@string/name"
         android:inputType="text"
         android:padding="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_email_address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +65,7 @@
         app:layout_constraintVertical_bias="0.705" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/edit_text_email_address"
         android:layout_width="303dp"
         android:layout_height="63dp"
         android:layout_marginTop="164dp"
@@ -76,7 +76,7 @@
         android:inputType="textEmailAddress"
 
         android:padding="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +84,7 @@
         app:layout_constraintVertical_bias="0.453" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/edit_text_password"
         android:layout_width="304dp"
         android:layout_height="68dp"
         android:layout_marginBottom="56dp"
@@ -95,13 +95,13 @@
         android:inputType="textPassword"
         android:padding="20dp"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_password_confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/edit_text_password_confirm"
         android:layout_width="304dp"
         android:layout_height="68dp"
         android:layout_marginBottom="120dp"
@@ -125,7 +125,7 @@
         android:textColor="#FF0000"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_email_address"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,15 +139,15 @@
         android:textColor="#FF0000"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_email_address"
         app:layout_constraintVertical_bias="0.521" />
 
     <TextView
-        android:id="@+id/textErrorPassowrd"
+        android:id="@+id/text_error_password"
         android:layout_width="300dp"
         android:layout_height="29dp"
         android:layout_marginTop="12dp"
@@ -155,15 +155,15 @@
         android:textColor="#FF0000"
         android:textSize="16sp"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_password_confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_password"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textErrorPassowrd2"
+        android:id="@+id/text_error_password_confirm"
         android:layout_width="300dp"
         android:layout_height="29dp"
         android:layout_marginTop="8dp"
@@ -174,7 +174,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_password_confirm" />
 
     <Button
         android:id="@+id/buttonCadastrar"

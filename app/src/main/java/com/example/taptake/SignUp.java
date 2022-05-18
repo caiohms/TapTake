@@ -5,24 +5,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+import com.example.taptake.databinding.ActivitySignUpBinding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SignUp extends AppCompatActivity {
 
+    ActivitySignUpBinding binding;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_up);
 
-        Button buttonCadastrar = findViewById(R.id.buttonCadastrar);
-        buttonCadastrar.setOnClickListener(view -> openHomeScreen());
+        binding = ActivitySignUpBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
+        binding.buttonCadastrar.setOnClickListener(view -> openHomeScreen());
 
-        getWindow().setDecorFitsSystemWindows(false);
+        getWindow().setDecorFitsSystemWindows(true);
+
         final WindowInsetsController insetsController = getWindow().getInsetsController();
         if (insetsController != null) {
             insetsController.hide(WindowInsets.Type.statusBars());
@@ -32,44 +33,34 @@ public class SignUp extends AppCompatActivity {
 
     public void openHomeScreen() {
         boolean error = false;
-        EditText editTextName = findViewById(R.id.editTextName);
-        EditText editTextEmail = findViewById(R.id.editTextTextEmailAddress);
-        EditText editTextPassword = findViewById(R.id.editTextTextPassword);
-        EditText editTextPassword2 = findViewById(R.id.editTextTextPassword2);
-
-        TextView textErrorName = findViewById(R.id.textErrorName);
-        TextView textErrorEmail = findViewById(R.id.textErrorEmail);
-        TextView textErrorPassowrd = findViewById(R.id.textErrorPassowrd);
-        TextView textErrorPassowrd2 = findViewById(R.id.textErrorPassowrd2);
-
-        textErrorEmail.setVisibility(View.INVISIBLE);
-        textErrorPassowrd.setVisibility(View.INVISIBLE);
-        textErrorName.setVisibility(View.INVISIBLE);
-        textErrorPassowrd2.setVisibility(View.INVISIBLE);
+        binding.textErrorName.setVisibility(View.INVISIBLE);
+        binding.textErrorEmail.setVisibility(View.INVISIBLE);
+        binding.textErrorPassword.setVisibility(View.INVISIBLE);
+        binding.textErrorPasswordConfirm.setVisibility(View.INVISIBLE);
 
 
-        if (editTextName.getText().toString().trim().equals("")) {
-            textErrorName.setVisibility(View.VISIBLE);
+        if (binding.editTextName.getText().toString().trim().equals("")) {
+            binding.textErrorName.setVisibility(View.VISIBLE);
             error = true;
         }
-        if (editTextEmail.getText().toString().trim().equals("")) {
-            textErrorEmail.setVisibility(View.VISIBLE);
+        if (binding.editTextEmailAddress.getText().toString().trim().equals("")) {
+            binding.textErrorEmail.setVisibility(View.VISIBLE);
             error = true;
         }
-        if (editTextPassword.getText().toString().trim().equals("")) {
-            textErrorPassowrd.setVisibility(View.VISIBLE);
+        if (binding.editTextPassword.getText().toString().trim().equals("")) {
+            binding.textErrorPassword.setVisibility(View.VISIBLE);
             error = true;
         }
-        if (editTextPassword2.getText().toString().trim().equals("")) {
-            textErrorPassowrd2.setVisibility(View.VISIBLE);
+        if (binding.editTextPasswordConfirm.getText().toString().trim().equals("")) {
+            binding.textErrorPasswordConfirm.setVisibility(View.VISIBLE);
             error = true;
         }
 
         if (!error) {
-            textErrorName.setVisibility(View.INVISIBLE);
-            textErrorEmail.setVisibility(View.INVISIBLE);
-            textErrorPassowrd.setVisibility(View.INVISIBLE);
-            textErrorPassowrd2.setVisibility(View.INVISIBLE);
+            binding.textErrorName.setVisibility(View.INVISIBLE);
+            binding.textErrorEmail.setVisibility(View.INVISIBLE);
+            binding.textErrorPassword.setVisibility(View.INVISIBLE);
+            binding.textErrorPasswordConfirm.setVisibility(View.INVISIBLE);
             Intent intent = new Intent(this, HomeScreen.class);
             startActivity(intent);
         }

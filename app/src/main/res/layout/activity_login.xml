@@ -51,7 +51,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/login_edit_text_email_address"
         android:layout_width="303dp"
         android:layout_height="63dp"
         android:background="@drawable/edit_text"
@@ -67,7 +67,7 @@
         app:layout_constraintVertical_bias="0.304" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/login_edit_text_password"
         android:layout_width="304dp"
         android:layout_height="68dp"
         android:layout_marginBottom="216dp"
@@ -82,7 +82,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/login_edit_text_email_address"
         app:layout_constraintVertical_bias="0.486" />
 
     <Button
@@ -100,11 +100,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/login_edit_text_password"
         app:layout_constraintVertical_bias="0.503" />
 
     <Button
-        android:id="@+id/singUp"
+        android:id="@+id/signUp"
         android:layout_width="397dp"
         android:layout_height="52dp"
         android:layout_centerHorizontal="true"
@@ -113,7 +113,6 @@
         android:text="@string/create_account"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonLogar" />
 
@@ -129,7 +128,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/login_edit_text_password"
         app:layout_constraintVertical_bias="0.456" />
 
 
