@@ -5,9 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
-import com.example.taptake.databinding.ActivitySignUpBinding;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.taptake.databinding.ActivitySignUpBinding;
 
 public class SignUp extends AppCompatActivity {
 

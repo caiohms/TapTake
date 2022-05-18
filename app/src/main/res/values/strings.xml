@@ -12,7 +12,7 @@
     <string name="menu_university">Universidades</string>
     <string name="menu_cart">Carrinho</string>
     <string name="menu_requests">Pedidos</string>
-    <string name="seja_bem_vindo">Seja bem-vindo!</string>
+    <string name="textWelcome">Seja bem-vindo!</string>
     <string name="create_account">Crie uma conta clicando aqui</string>
     <string name="login" />
     <string name="forget_password" />
@@ -34,4 +34,5 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="name">Nome</string>
     <string name="messageNameError">Você precisa inserir um nome válido!</string>
+    <string name="name_restaurant">Nome Restaurante</string>
 </resources>

@@ -34,10 +34,10 @@
         app:popupTheme="@style/Theme.TapTake.PopupOverlay" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/name_restaurant"
         android:layout_width="287dp"
         android:layout_height="46dp"
-        android:text="Restaurante Nome"
+        android:text="@string/name_restaurant"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar"
@@ -46,4 +46,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="59dp"
+        android:layout_height="45dp"
+        android:backgroundTint="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        app:tint="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageRestaurantBanner"
+        android:layout_width="393dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/banner_burger_king" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,6 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
-import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -28,24 +27,12 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-
-        CardView carView1 = root.findViewById(R.id.carView1);
-        carView1.setOnClickListener(view -> openRestaurant(R.id.carView1));
-
-        CardView carView2 = root.findViewById(R.id.carView2);
-        carView2.setOnClickListener(view -> openRestaurant(R.id.carView2));
-
-        CardView carView3 = root.findViewById(R.id.carView3);
-        carView3.setOnClickListener(view -> openRestaurant(R.id.carView3));
-
-        CardView carView4 = root.findViewById(R.id.carView4);
-        carView4.setOnClickListener(view -> openRestaurant(R.id.carView4));
-
-        CardView carView5 = root.findViewById(R.id.carView5);
-        carView5.setOnClickListener(view -> openRestaurant(R.id.carView5));
-
-        CardView carView6 = root.findViewById(R.id.carView6);
-        carView6.setOnClickListener(view -> openRestaurant(R.id.carView6));
+        binding.carView1.setOnClickListener(view -> openRestaurant(R.id.carView1));
+        binding.carView2.setOnClickListener(view -> openRestaurant(R.id.carView2));
+        binding.carView3.setOnClickListener(view -> openRestaurant(R.id.carView3));
+        binding.carView4.setOnClickListener(view -> openRestaurant(R.id.carView4));
+        binding.carView5.setOnClickListener(view -> openRestaurant(R.id.carView5));
+        binding.carView6.setOnClickListener(view -> openRestaurant(R.id.carView6));
 
         return root;
     }
