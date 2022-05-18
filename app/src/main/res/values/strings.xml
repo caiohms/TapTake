@@ -32,7 +32,8 @@
     <string name="textSignUpPage">Cadastro</string>
     <string name="SignUp">Cadastrar</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="name">Nome</string>
     <string name="messageNameError">Você precisa inserir um nome válido!</string>
     <string name="name_restaurant">Nome Restaurante</string>
+    <string name="name">Nome</string>
+    <string name="save">Salvar</string>
 </resources>

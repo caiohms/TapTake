@@ -7,17 +7,102 @@
     android:layout_height="match_parent"
     tools:context=".ui.profile.ProfileFragment" >
 
-    <TextView
-        android:id="@+id/text_Profile"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/profile_edit_text_name"
+        android:layout_width="303dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/edit_text"
+        android:drawableEnd="@drawable/ic_baseline_account_circle_24"
+        android:ems="10"
+        android:hint="@string/name"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/profile_edit_text_email"
+        android:layout_width="303dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text"
+        android:drawableEnd="@drawable/ic_baseline_email_24"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_edit_text_name" />
+
+    <EditText
+        android:id="@+id/profile_edit_text_password"
+        android:layout_width="304dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text"
+        android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_edit_text_email" />
+
+    <EditText
+        android:id="@+id/profile_edit_text_password_confirm"
+        android:layout_width="304dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text"
+        android:drawableEnd="@drawable/ic_baseline_visibility_off_24"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_edit_text_password" />
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:text="SELECT IMAGE"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_edit_text_password_confirm" />
+
+    <Button
+        android:id="@+id/buttonSaveProfile"
+        android:layout_width="294dp"
+        android:layout_height="68dp"
+        android:layout_marginBottom="72dp"
+        android:backgroundTint="#ffb500"
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_edit_text_password_confirm"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
