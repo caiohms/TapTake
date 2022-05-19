@@ -1,23 +1,234 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.university.UniversityFragment" >
+    tools:context=".ui.university.UniversityFragment">
 
-    <TextView
-        android:id="@+id/text_gallery"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="393dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Procure aqui"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewUniversity"
+        android:layout_width="390dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.13">
+
+        <ImageView
+            android:id="@+id/university_logo1"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/logo_university"
+            android:src="@drawable/logo_puc" />
+
+        <TextView
+            android:id="@+id/university_name"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/university_1"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/university_address"
+            android:layout_width="193dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="60dp"
+            android:gravity="start"
+            android:text="@string/address_puc"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/buttonStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="70dp"
+            android:contentDescription="@string/icon_fav"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_baseline_star_border_24"
+            app:tint="#000000"
+            tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewUniversity2"
+        android:layout_width="390dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewUniversity"
+        app:layout_constraintVertical_bias="0.048">
+
+        <ImageView
+            android:id="@+id/university_logo2"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/logo_university"
+            android:src="@drawable/logo_unicuritiba" />
+
+        <TextView
+            android:id="@+id/university_name2"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/university_2"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/university_address2"
+            android:layout_width="192dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="60dp"
+            android:gravity="start"
+            android:text="@string/address_unicuritiba"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/buttonStar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="70dp"
+            android:contentDescription="@string/icon_fav"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_baseline_star_border_24"
+            app:tint="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewUniversity3"
+        android:layout_width="390dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewUniversity2"
+        app:layout_constraintVertical_bias="0.068">
+
+        <ImageView
+            android:id="@+id/university_logo3"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/logo_university"
+            android:src="@drawable/logo_utp" />
+
+        <TextView
+            android:id="@+id/university_name3"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/university_3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/university_address3"
+            android:layout_width="192dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="60dp"
+            android:gravity="start"
+            android:text="@string/address_utp"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/buttonStar3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="70dp"
+            android:contentDescription="@string/icon_fav"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_baseline_star_border_24"
+            app:tint="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewUniversity4"
+        android:layout_width="390dp"
+        android:layout_height="117dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/cardViewUniversity3"
+        app:layout_constraintVertical_bias="0.123">
+
+        <ImageView
+            android:id="@+id/university_logo4"
+            android:layout_width="108dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:contentDescription="@string/logo_university"
+            android:src="@drawable/logo_up" />
+
+        <TextView
+            android:id="@+id/university_name4"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/university_4"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/university_address4"
+            android:layout_width="192dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="60dp"
+            android:gravity="start"
+            android:text="@string/address_up"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/buttonStar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="330dp"
+            android:layout_marginTop="70dp"
+            android:contentDescription="@string/icon_fav"
+            android:minHeight="48dp"
+            android:src="@drawable/ic_baseline_star_border_24"
+            app:tint="#000000"
+            tools:ignore="TouchTargetSizeCheck" />
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
