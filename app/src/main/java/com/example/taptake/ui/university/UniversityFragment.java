@@ -12,9 +12,33 @@ import androidx.lifecycle.ViewModelProvider;
 import com.example.taptake.R;
 import com.example.taptake.databinding.FragmentUniversityBinding;
 
+import java.util.LinkedList;
+
+class University {
+    private boolean checker = true;
+    private final android.widget.ImageButton imageButton;
+
+    public University(android.widget.ImageButton iB) {
+        imageButton = iB;
+        imageButton.setOnClickListener(view -> this.toggle());
+    }
+
+    private void toggle() {
+        if (checker) {
+            imageButton.setImageResource(R.drawable.ic_baseline_star_24);
+            checker = false;
+        } else {
+            imageButton.setImageResource(R.drawable.ic_baseline_star_border_24);
+            checker = true;
+        }
+    }
+
+}
+
 public class UniversityFragment extends Fragment {
 
     private FragmentUniversityBinding binding;
+    private LinkedList<University> universities = new LinkedList<>();
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -24,33 +48,12 @@ public class UniversityFragment extends Fragment {
         binding = FragmentUniversityBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        binding.buttonStar.setOnClickListener(view -> favorite(R.id.buttonStar));
-        binding.buttonStar2.setOnClickListener(view -> favorite(R.id.buttonStar2));
-        binding.buttonStar3.setOnClickListener(view -> favorite(R.id.buttonStar3));
-        binding.buttonStar4.setOnClickListener(view -> favorite(R.id.buttonStar4));
+        universities.add(new University(binding.buttonStar));
+        universities.add(new University(binding.buttonStar2));
+        universities.add(new University(binding.buttonStar3));
+        universities.add(new University(binding.buttonStar4));
 
         return root;
-    }
-
-    public void favorite(int id) {
-        switch (id) {
-            case R.id.buttonStar: {
-                binding.buttonStar.setImageResource(R.drawable.ic_baseline_star_24);
-                break;
-            }
-            case R.id.buttonStar2: {
-                binding.buttonStar2.setImageResource(R.drawable.ic_baseline_star_24);
-                break;
-            }
-            case R.id.buttonStar3: {
-                binding.buttonStar3.setImageResource(R.drawable.ic_baseline_star_24);
-                break;
-            }
-            case R.id.buttonStar4: {
-                binding.buttonStar4.setImageResource(R.drawable.ic_baseline_star_24);
-                break;
-            }
-        }
     }
 
     @Override
