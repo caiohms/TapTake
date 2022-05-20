@@ -4,9 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowInsets;
 import android.view.WindowInsetsController;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.taptake.databinding.ActivitySplashScreenBinding;
 
 public class SplashScreen extends AppCompatActivity {

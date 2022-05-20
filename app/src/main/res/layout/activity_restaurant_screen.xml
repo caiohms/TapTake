@@ -18,7 +18,8 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.978"
         app:srcCompat="@android:drawable/ic_dialog_email"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:contentDescription="@string/notification" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -60,7 +61,8 @@
         app:layout_constraintVertical_bias="0.009"
         app:srcCompat="@drawable/ic_baseline_arrow_back_24"
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
-        app:tint="#FFFFFF" />
+        app:tint="#FFFFFF"
+        android:contentDescription="@string/returntoprevious" />
 
     <ImageView
         android:id="@+id/imageRestaurantBanner"
@@ -71,6 +73,19 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:srcCompat="@drawable/banner_burger_king" />
+        app:srcCompat="@drawable/banner_burger_king"
+        android:contentDescription="@string/bannerrestaurant" />
+
+    <Button
+        android:id="@+id/buttonAgendamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TESTE AGENDAMENTO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageRestaurantBanner"
+        app:layout_constraintVertical_bias="0.911" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

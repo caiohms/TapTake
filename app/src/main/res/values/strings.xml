@@ -30,7 +30,7 @@
     <string name="messageLoginError">Seu email ou senha estão incorretos!</string>
     <string name="messagePasswordErrorSecondary">Você precisa confimar sua senha!</string>
     <string name="textSignUpPage">Cadastro</string>
-    <string name="SignUp">Cadastrar</string>
+    <string name="signUp">Cadastrar</string>
     <string name="confirm_password">Confirm Password</string>
     <string name="messageNameError">Você precisa inserir um nome válido!</string>
     <string name="name_restaurant">Nome Restaurante</string>
@@ -38,12 +38,20 @@
     <string name="save">Salvar</string>
     <string name="logo_university">logo</string>
     <string name="university_1">Pontifícia Universidade Católica do Paraná</string>
-    <string name="address_puc">Endereço: R. Imac. Conceição, 1155 - Prado Velho, Curitiba - PR, 80215-901</string>
+    <string name="address_puc">Endereço: R. Imac. Conceição, 1155 – Prado Velho, Curitiba – PR, 80215–901</string>
     <string name="icon_fav">icon_fav</string>
     <string name="university_2">UNICURITIBA</string>
-    <string name="address_unicuritiba">Endereço: R. Chile, 1678 - Rebouças, Curitiba - PR, 80220-181</string>
+    <string name="address_unicuritiba">Endereço: R. Chile, 1678 – Rebouças, Curitiba – PR, 80220–181</string>
     <string name="university_3">Universidade Tuiuti do Paraná</string>
-    <string name="address_utp">Endereço: Rua Sydnei Antonio Rangel Santos, 238 - Santo Inácio, Curitiba - PR, 82010-330</string>
+    <string name="address_utp">Endereço: Rua Sydnei Antonio Rangel Santos, 238 – Santo Inácio, Curitiba – PR, 82010–330</string>
     <string name="university_4">Universidade Positivo</string>
     <string name="address_up">Endereço: R. Prof. Pedro Viriato Parigot de Souza, 5300</string>
+    <string name="textschedunlig">Agendamento</string>
+    <string name="textDate">Selecione uma data:</string>
+    <string name="textHours">Selecione um horário:</string>
+    <string name="textbuttonScheduling">Agendar Pedido</string>
+    <string name="notification">notification</string>
+    <string name="bannerrestaurant">bannerRestaurant</string>
+    <string name="returntoprevious">returnToPreviousHomeScreen</string>
+    <string name="background_image_2">background image 2</string>
 </resources>

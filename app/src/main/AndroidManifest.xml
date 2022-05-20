@@ -9,27 +9,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TapTake">
         <activity
+            android:name=".Scheduling"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
             android:name=".RestaurantScreen"
-            android:launchMode="singleTask"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTask" />
         <activity
             android:name=".Login"
-            android:launchMode="singleTask"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTask" />
         <activity
             android:name=".SignUp"
-            android:launchMode="singleTask"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTask" />
         <activity
             android:name=".HomeScreen"
-            android:launchMode="singleTask"
             android:exported="false"
             android:label="@string/title_activity_home_screen"
+            android:launchMode="singleTask"
             android:theme="@style/Theme.TapTake.NoActionBar" />
         <activity
             android:name=".SplashScreen"
-            android:launchMode="singleTask"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

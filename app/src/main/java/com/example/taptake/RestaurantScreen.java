@@ -2,9 +2,7 @@ package com.example.taptake;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.taptake.databinding.ActivityRestaurantScreenBinding;
 
 public class RestaurantScreen extends AppCompatActivity {
@@ -21,7 +19,8 @@ public class RestaurantScreen extends AppCompatActivity {
         Bundle bundle = this.getIntent().getExtras();
         int idCardView = bundle.getInt("restaurant");
 
-        binding.backButton.setOnClickListener(view -> openHomeScreen());
+        binding.backButton.setOnClickListener(view -> returnToPreviousHomeScreen());
+        binding.buttonAgendamento.setOnClickListener(view -> openScheduling());
 
         switch (idCardView){
             case R.id.carView1:{
@@ -53,8 +52,13 @@ public class RestaurantScreen extends AppCompatActivity {
 
     }
 
-    public void openHomeScreen() {
+    public void returnToPreviousHomeScreen() {
         Intent intent = new Intent(this, HomeScreen.class);
+        startActivity(intent);
+    }
+
+    public void openScheduling(){
+        Intent intent = new Intent(this, Scheduling.class);
         startActivity(intent);
     }
 }
