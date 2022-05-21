@@ -19,6 +19,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ListView
+        android:id="@+id/universityList"
+        android:layout_width="390dp"
+        android:layout_height="780dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!--
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewUniversity"
         android:layout_width="390dp"
@@ -231,4 +244,6 @@
             app:tint="#000000"
             tools:ignore="TouchTargetSizeCheck" />
     </androidx.cardview.widget.CardView>
+    -->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

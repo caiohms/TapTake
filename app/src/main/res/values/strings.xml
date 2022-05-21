@@ -54,4 +54,7 @@
     <string name="bannerrestaurant">bannerRestaurant</string>
     <string name="returntoprevious">returnToPreviousHomeScreen</string>
     <string name="background_image_2">background image 2</string>
+    <string name="text_payment">Formas de Pagamento</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

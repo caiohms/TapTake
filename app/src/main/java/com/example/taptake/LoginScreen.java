@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.taptake.databinding.ActivityLoginBinding;
 
-public class Login extends AppCompatActivity {
+public class LoginScreen extends AppCompatActivity {
 
     ActivityLoginBinding binding;
 
@@ -52,7 +52,7 @@ public class Login extends AppCompatActivity {
     }
 
     public void openSingUpScreen() {
-        Intent intent = new Intent(this, SignUp.class);
+        Intent intent = new Intent(this, SignUpScreen.class);
         startActivity(intent);
     }
 }

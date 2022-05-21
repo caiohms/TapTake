@@ -5,7 +5,7 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import com.example.taptake.databinding.ActivitySchedulingBinding;
 
-public class Scheduling extends AppCompatActivity {
+public class SchedulingScreen extends AppCompatActivity {
     ActivitySchedulingBinding binding;
 
     @Override
@@ -20,10 +20,16 @@ public class Scheduling extends AppCompatActivity {
         binding.datePicker1.setIs24HourView(true);
 
         binding.backButtonSchedunlig.setOnClickListener(view -> returnToPreviousRestaurantScreen());
+        binding.buttonScheduling.setOnClickListener(view -> openPaymentScrenn());
     }
 
     public void returnToPreviousRestaurantScreen() {
         Intent intent = new Intent(this, RestaurantScreen.class);
+        startActivity(intent);
+    }
+
+    public void openPaymentScrenn() {
+        Intent intent = new Intent(this, PaymentScreen.class);
         startActivity(intent);
     }
 }

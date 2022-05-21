@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -12,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.example.taptake.R;
 import com.example.taptake.RestaurantScreen;
+import com.example.taptake.adapters.RestaurantAdapter;
 import com.example.taptake.databinding.FragmentHomeBinding;
 
 public class HomeFragment extends Fragment {
@@ -27,12 +29,20 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
+        /*
         binding.carView1.setOnClickListener(view -> openRestaurant(R.id.carView1));
         binding.carView2.setOnClickListener(view -> openRestaurant(R.id.carView2));
         binding.carView3.setOnClickListener(view -> openRestaurant(R.id.carView3));
         binding.carView4.setOnClickListener(view -> openRestaurant(R.id.carView4));
         binding.carView5.setOnClickListener(view -> openRestaurant(R.id.carView5));
         binding.carView6.setOnClickListener(view -> openRestaurant(R.id.carView6));
+        */
+
+        GridView RestaurantGrid = (GridView) root.findViewById(R.id.restaurantGridView);
+        RestaurantGrid.setAdapter(new RestaurantAdapter(inflater, getContext(), yes -> {
+            Intent intent = new Intent(getContext(), RestaurantScreen.class);
+            startActivity(intent);
+        }));
 
         return root;
     }

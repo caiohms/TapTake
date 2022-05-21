@@ -6,118 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/carView1"
-        android:layout_width="156dp"
-        android:layout_height="96dp"
+    <GridView
+        android:id="@+id/restaurantGridView"
+        android:layout_width="344dp"
+        android:layout_height="652dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259">
-
-        <ImageView
-            android:id="@+id/imageCardView1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/logorestaurant1" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/carView2"
-        android:layout_width="156dp"
-        android:layout_height="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.26">
-
-        <ImageView
-            android:id="@+id/imageCardView2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/logorestaurant2" />
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/carView3"
-        android:layout_width="156dp"
-        android:layout_height="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.425">
-
-        <ImageView
-            android:id="@+id/imageCardView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/logorestaurant3" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/carView4"
-        android:layout_width="156dp"
-        android:layout_height="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426">
-
-        <ImageView
-            android:id="@+id/imageCardView4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/logorestaurant4" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/carView5"
-        android:layout_width="156dp"
-        android:layout_height="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.598">
-
-        <ImageView
-            android:id="@+id/imageCardView5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/logorestaurant5" />
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/carView6"
-        android:layout_width="156dp"
-        android:layout_height="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.597">
-
-        <ImageView
-            android:id="@+id/imageCardView6"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/logorestaurant6" />
-
-    </androidx.cardview.widget.CardView>
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

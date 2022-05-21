@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.taptake.databinding.ActivitySignUpBinding;
 
-public class SignUp extends AppCompatActivity {
+public class SignUpScreen extends AppCompatActivity {
 
     ActivitySignUpBinding binding;
 

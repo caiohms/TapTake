@@ -9,7 +9,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TapTake">
         <activity
-            android:name=".Scheduling"
+            android:name=".PaymentScreen"
+            android:exported="false" />
+        <activity
+            android:name=".SchedulingScreen"
             android:exported="false"
             android:launchMode="singleTask" />
         <activity
@@ -17,11 +20,11 @@
             android:exported="false"
             android:launchMode="singleTask" />
         <activity
-            android:name=".Login"
+            android:name=".LoginScreen"
             android:exported="false"
             android:launchMode="singleTask" />
         <activity
-            android:name=".SignUp"
+            android:name=".SignUpScreen"
             android:exported="false"
             android:launchMode="singleTask" />
         <activity

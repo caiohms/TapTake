@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Scheduling">
+    tools:context=".SchedulingScreen">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_schedunlig"
@@ -19,18 +19,6 @@
         app:layout_constraintVertical_bias="0.0"
         app:popupTheme="@style/Theme.TapTake.PopupOverlay" />
 
-    <TextView
-        android:id="@+id/textDate"
-        android:textSize="20sp"
-        android:layout_width="273dp"
-        android:layout_height="34dp"
-        android:layout_marginTop="20dp"
-        android:text="@string/textDate"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.266"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_schedunlig" />
 
     <TextView
         android:id="@+id/name_schedunlig"
@@ -51,6 +39,7 @@
         android:layout_width="59dp"
         android:layout_height="45dp"
         android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@string/returntoprevious"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -58,9 +47,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.009"
         app:srcCompat="@drawable/ic_baseline_arrow_back_24"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
         app:tint="#FFFFFF"
-        android:contentDescription="@string/returntoprevious" />
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="273dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/textDate"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.266"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_schedunlig" />
 
     <CalendarView
         android:id="@+id/calendarView"
