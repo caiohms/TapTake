@@ -26,7 +26,7 @@ public class RestaurantScreen extends AppCompatActivity {
         binding.buttonAgendamento.setOnClickListener(view -> openScheduling());
 
         binding.nameRestaurant.setText(Database.CurrentRestaurant.Name);
-//        binding.imageRestaurantBanner.setImageDrawable(ctx.getResources().getDrawable(ctx.getResources().getIdentifier(Database.CurrentRestaurant.Banner, "drawable", ctx.getPackageName())));
+        binding.imageRestaurantBanner.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(Database.CurrentRestaurant.Banner, "drawable", getPackageName())));
         // TODO: Set items.
     }
 

@@ -69,7 +69,7 @@ public class Database {
                 Restaurant BurgerKing = new Restaurant();
                 BurgerKing.Name = "McDonald's";
                 BurgerKing.Logo = "@drawable/logorestaurant2";
-                BurgerKing.Banner = "@drawable/banner_McDo";
+                BurgerKing.Banner = "@drawable/banner_mcdo";
                 BurgerKing.Items = new ArrayList<>();
 
                 {
