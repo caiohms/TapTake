@@ -26,7 +26,8 @@ public class RestaurantScreen extends AppCompatActivity {
         binding.buttonAgendamento.setOnClickListener(view -> openScheduling());
 
         binding.nameRestaurant.setText(Database.CurrentRestaurant.Name);
-        // TODO: Set Banner.
+//        binding.imageRestaurantBanner.setImageDrawable(ctx.getResources().getDrawable(ctx.getResources().getIdentifier(Database.CurrentRestaurant.Banner, "drawable", ctx.getPackageName())));
+        // TODO: Set items.
     }
 
     public void returnToPreviousHomeScreen() {
@@ -34,7 +35,7 @@ public class RestaurantScreen extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openScheduling(){
+    public void openScheduling() {
         Intent intent = new Intent(this, SchedulingScreen.class);
         startActivity(intent);
     }

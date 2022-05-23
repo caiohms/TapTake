@@ -8,21 +8,25 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardViewRestaurant"
-        android:layout_width="156dp"
-        android:layout_height="96dp"
+        android:layout_width="175dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259">
+        app:layout_constraintVertical_bias="2">
 
         <ImageView
             android:id="@+id/imageRestaurant"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:contentDescription="@string/carviewrestaurant"
             android:src="@drawable/logorestaurant1" />
-
     </androidx.cardview.widget.CardView>
 
 </FrameLayout>

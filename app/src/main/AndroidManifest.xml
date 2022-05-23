@@ -10,7 +10,8 @@
         android:theme="@style/Theme.TapTake">
         <activity
             android:name=".PaymentScreen"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTask"/>
         <activity
             android:name=".SchedulingScreen"
             android:exported="false"

@@ -1,7 +1,6 @@
 package com.example.taptake.fragments;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,12 +9,9 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
-import com.example.taptake.HomeScreen;
 import com.example.taptake.R;
-import com.example.taptake.data.Database;
 import com.example.taptake.data.UserUniversity;
 
 /**
@@ -75,14 +71,14 @@ public class UniversityFragment extends Fragment {
 
         Favorite.setImageResource(university.Favorite ? R.drawable.ic_baseline_star_24 : R.drawable.ic_baseline_star_border_24);
 
-        CardView Card = (CardView) view.findViewById(R.id.cardViewUniversity);
-
-        Card.setOnClickListener(view1 -> {
-            Database.CurrentUniversity = university;
-
-            Intent intent = new Intent(ctx, HomeScreen.class);
-            startActivity(intent);
-        });
+//        CardView Card = (CardView) view.findViewById(R.id.cardViewUniversity);
+//
+//        Card.setOnClickListener(view1 -> {
+//            Database.CurrentUniversity = university;
+//
+//            Intent intent = new Intent(ctx, HomeScreen.class);
+//            startActivity(intent);
+//        });
 
         // Inflate the layout for this fragment
         return view;
