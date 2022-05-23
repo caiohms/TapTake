@@ -58,4 +58,8 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="carviewrestaurant">CarViewRestaurant</string>
+    <string name="name_item">Name Item</string>
+    <string name="descriptionitem">DescriptionItem</string>
+    <string name="valor_item">Valor: R$</string>
+    <string name="imageitem">imageItem</string>
 </resources>

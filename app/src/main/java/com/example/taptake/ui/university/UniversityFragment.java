@@ -1,5 +1,6 @@
 package com.example.taptake.ui.university;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +10,10 @@ import android.widget.ListView;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.taptake.HomeScreen;
 import com.example.taptake.R;
-import com.example.taptake.databinding.FragmentUniversityBinding;
 import com.example.taptake.adapters.UserUniversityAdapter;
+import com.example.taptake.databinding.FragmentUniversityBinding;
 
 public class UniversityFragment extends Fragment {
 
@@ -22,9 +24,12 @@ public class UniversityFragment extends Fragment {
         binding = FragmentUniversityBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        ListView UniList = (ListView) root.findViewById(R.id.universityList);
+        ListView UniList = root.findViewById(R.id.universityList);
 
-        UniList.setAdapter(new UserUniversityAdapter(inflater, getContext()));
+        UniList.setAdapter(new UserUniversityAdapter(inflater, getContext(), yes -> {
+            Intent intent = new Intent(getContext(), HomeScreen.class);
+            startActivity(intent);
+        }));
 
         return root;
     }

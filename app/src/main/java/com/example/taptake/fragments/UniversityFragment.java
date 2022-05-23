@@ -9,10 +9,14 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.taptake.R;
+import com.example.taptake.data.Database;
 import com.example.taptake.data.UserUniversity;
+
+import java.util.function.Consumer;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -25,6 +29,8 @@ public class UniversityFragment extends Fragment {
 
     private Context ctx;
 
+    public Consumer<Boolean> GoToHomeScreen;
+
     public UniversityFragment() {
         // Required empty public constructor.
     }
@@ -36,10 +42,11 @@ public class UniversityFragment extends Fragment {
      * @return A new instance of fragment UniversityFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static UniversityFragment newInstance(Context ctx, UserUniversity university) {
+    public static UniversityFragment newInstance(Context ctx, UserUniversity university, Consumer<Boolean> GoToHomeScreen) {
         UniversityFragment fragment = new UniversityFragment();
         fragment.university = university;
         fragment.ctx = ctx;
+        fragment.GoToHomeScreen = GoToHomeScreen;
         return fragment;
     }
 
@@ -53,16 +60,16 @@ public class UniversityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_university_single, container, false);
 
-        ImageView Logo = (ImageView) view.findViewById(R.id.university_logo1);
+        ImageView Logo = view.findViewById(R.id.university_logo1);
         Logo.setImageDrawable(ctx.getResources().getDrawable(ctx.getResources().getIdentifier(university.University.Image, "drawable", ctx.getPackageName())));
 
-        TextView Name = (TextView) view.findViewById(R.id.university_name);
+        TextView Name = view.findViewById(R.id.university_name);
         Name.setText(university.University.Name);
 
-        TextView Description = (TextView) view.findViewById(R.id.university_address);
+        TextView Description = view.findViewById(R.id.university_address);
         Description.setText(university.University.Description);
 
-        ImageButton Favorite = (ImageButton) view.findViewById(R.id.buttonStar);
+        ImageButton Favorite = view.findViewById(R.id.buttonStar);
         Favorite.setOnClickListener(view12 -> {
             university.Favorite = !university.Favorite;
 
@@ -71,14 +78,13 @@ public class UniversityFragment extends Fragment {
 
         Favorite.setImageResource(university.Favorite ? R.drawable.ic_baseline_star_24 : R.drawable.ic_baseline_star_border_24);
 
-//        CardView Card = (CardView) view.findViewById(R.id.cardViewUniversity);
-//
-//        Card.setOnClickListener(view1 -> {
-//            Database.CurrentUniversity = university;
-//
-//            Intent intent = new Intent(ctx, HomeScreen.class);
-//            startActivity(intent);
-//        });
+        CardView Card = view.findViewById(R.id.cardViewUniversity);
+
+        Card.setOnClickListener(view1 -> {
+            Database.CurrentUniversity = university;
+
+            GoToHomeScreen.accept(true);
+        });
 
         // Inflate the layout for this fragment
         return view;

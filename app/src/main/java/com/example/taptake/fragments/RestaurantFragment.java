@@ -56,10 +56,10 @@ public class RestaurantFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_restaurant_single, container, false);
 
-        ImageView Image = (ImageView) view.findViewById(R.id.imageRestaurant);
+        ImageView Image = view.findViewById(R.id.imageRestaurant);
         Image.setImageDrawable(ctx.getResources().getDrawable(ctx.getResources().getIdentifier(restaurant.Logo, "drawable", ctx.getPackageName())));
 
-        CardView Card = (CardView) view.findViewById(R.id.cardViewRestaurant);
+        CardView Card = view.findViewById(R.id.cardViewRestaurant);
         Card.setOnClickListener(view1 -> {
             Database.CurrentRestaurant = restaurant;
 

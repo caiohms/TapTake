@@ -33,7 +33,7 @@ public class Database {
                     Item CafeFiltrado = new Item();
                     CafeFiltrado.Name = "Café Filtrado";
                     CafeFiltrado.Description = "Preparado no método tradicional.";
-                    CafeFiltrado.Image = "@drawable/starbucks_cafe_filtrado";
+                    CafeFiltrado.Image = "@drawable/logo";
                     CafeFiltrado.Category = "Bebida";
                     CafeFiltrado.Price = 25;
 
@@ -44,7 +44,7 @@ public class Database {
                     Item PrensaFrancesa = new Item();
                     PrensaFrancesa.Name = "Prensa Francesa";
                     PrensaFrancesa.Description = "Perfeito para degustar com amigos.";
-                    PrensaFrancesa.Image = "@drawable/starbucks_prensa_francesa";
+                    PrensaFrancesa.Image = "@drawable/logo";
                     PrensaFrancesa.Category = "Bebida";
                     PrensaFrancesa.Price = 35;
 
@@ -55,7 +55,7 @@ public class Database {
                     Item ChocolateClassico = new Item();
                     ChocolateClassico.Name = "Chocolate Clássico";
                     ChocolateClassico.Description = "Café com Chocolate Cremoso.";
-                    ChocolateClassico.Image = "@drawable/starbucks_chocolate_classico";
+                    ChocolateClassico.Image = "@drawable/logo";
                     ChocolateClassico.Category = "Bebida";
                     ChocolateClassico.Price = 15;
 

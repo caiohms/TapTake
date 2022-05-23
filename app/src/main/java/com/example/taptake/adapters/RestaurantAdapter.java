@@ -6,10 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-
 import com.example.taptake.data.Database;
 import com.example.taptake.fragments.RestaurantFragment;
-
 import java.util.function.Consumer;
 
 public class RestaurantAdapter extends BaseAdapter {

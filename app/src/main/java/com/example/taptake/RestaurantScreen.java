@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.taptake.adapters.ItemAdapter;
 import com.example.taptake.data.Database;
 import com.example.taptake.data.Order;
 import com.example.taptake.databinding.ActivityRestaurantScreenBinding;
@@ -28,6 +29,8 @@ public class RestaurantScreen extends AppCompatActivity {
         binding.nameRestaurant.setText(Database.CurrentRestaurant.Name);
         binding.imageRestaurantBanner.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(Database.CurrentRestaurant.Banner, "drawable", getPackageName())));
         // TODO: Set items.
+
+        binding.itemList.setAdapter(new ItemAdapter(getLayoutInflater(), getApplicationContext()));
     }
 
     public void returnToPreviousHomeScreen() {

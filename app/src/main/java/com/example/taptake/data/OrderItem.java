@@ -1,6 +1,6 @@
 package com.example.taptake.data;
 
-public class OrderItem {
+public class OrderItem extends com.example.taptake.data.Item {
 
     public Item Item;
     public int Quantity;

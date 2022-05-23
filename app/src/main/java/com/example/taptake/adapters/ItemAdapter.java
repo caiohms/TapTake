@@ -8,41 +8,37 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.example.taptake.data.Database;
-import com.example.taptake.fragments.UniversityFragment;
+import com.example.taptake.fragments.ItemFragment;
 
-import java.util.function.Consumer;
+public class ItemAdapter extends BaseAdapter {
 
-public class UserUniversityAdapter extends BaseAdapter {
 
     public LayoutInflater inflater;
     public Context ctx;
-    public Consumer<Boolean> GoToHomeScreen;
 
-    public UserUniversityAdapter(LayoutInflater inflater, Context ctx, Consumer<Boolean> GoToHomeScreen) {
+    public ItemAdapter(LayoutInflater inflater, Context ctx) {
         this.inflater = inflater;
         this.ctx = ctx;
-        this.GoToHomeScreen = GoToHomeScreen;
     }
 
     @Override
     public int getCount() {
-        return Database.Universities.size();
+        return Database.CurrentRestaurant.Items.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return Database.Universities.get(i);
+        return Database.CurrentRestaurant.Items.get(i);
     }
 
     @Override
     public long getItemId(int i) {
-        return Database.Universities.get(i).hashCode();
+        return Database.CurrentRestaurant.Items.get(i).hashCode();
     }
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        UniversityFragment Fragment = UniversityFragment.newInstance(ctx, Database.Universities.get(i), GoToHomeScreen);
-
+        ItemFragment Fragment = ItemFragment.newInstance(ctx, Database.CurrentRestaurant.Items.get(i));
         return Fragment.onCreateView(inflater, viewGroup, Bundle.EMPTY);
     }
 }
