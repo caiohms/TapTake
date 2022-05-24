@@ -21,82 +21,180 @@ public class Database {
             PUCPR.University.Image = "@drawable/logo_puc";
             PUCPR.University.Restaurants = new ArrayList<>();
 
+            // TODO: Add Items.
 
             {
                 Restaurant Starbucks = new Restaurant();
                 Starbucks.Name = "StarBucks";
-                Starbucks.Logo = "@drawable/logorestaurant1";
+                Starbucks.Logo = "@drawable/logorestaurant_starbucks";
                 Starbucks.Banner = "@drawable/banner_starbucks";
                 Starbucks.Items = new ArrayList<>();
 
                 {
-                    Item CafeFiltrado = new Item();
-                    CafeFiltrado.Name = "Café Filtrado";
-                    CafeFiltrado.Description = "Preparado no método tradicional.";
-                    CafeFiltrado.Image = "@drawable/logo";
-                    CafeFiltrado.Category = "Bebida";
-                    CafeFiltrado.Price = 25;
+                    Item CafeMocha = new Item();
+                    CafeMocha.Name = "Café Mocha";
+                    CafeMocha.Description = "Preparado no método tradicional.";
+                    CafeMocha.Image = "@drawable/image_cafe_mocha";
+                    CafeMocha.Category = "Bebida";
+                    CafeMocha.Price = 16;
 
-                    Starbucks.Items.add(CafeFiltrado);
+                    Starbucks.Items.add(CafeMocha);
                 }
-
                 {
-                    Item PrensaFrancesa = new Item();
-                    PrensaFrancesa.Name = "Prensa Francesa";
-                    PrensaFrancesa.Description = "Perfeito para degustar com amigos.";
-                    PrensaFrancesa.Image = "@drawable/logo";
-                    PrensaFrancesa.Category = "Bebida";
-                    PrensaFrancesa.Price = 35;
+                    Item DarkChocolate = new Item();
+                    DarkChocolate.Name = "Dark Chocolate Mocha";
+                    DarkChocolate.Description = "Perfeito para degustar com amigos.";
+                    DarkChocolate.Image = "@drawable/image_darkchocolate";
+                    DarkChocolate.Category = "Bebida";
+                    DarkChocolate.Price = 20;
 
-                    Starbucks.Items.add(PrensaFrancesa);
+                    Starbucks.Items.add(DarkChocolate);
                 }
-
                 {
-                    Item ChocolateClassico = new Item();
-                    ChocolateClassico.Name = "Chocolate Clássico";
-                    ChocolateClassico.Description = "Café com Chocolate Cremoso.";
-                    ChocolateClassico.Image = "@drawable/logo";
-                    ChocolateClassico.Category = "Bebida";
-                    ChocolateClassico.Price = 15;
+                    Item CafeAmericano = new Item();
+                    CafeAmericano.Name = "Café Americano";
+                    CafeAmericano.Description = "Café com Chocolate Cremoso.";
+                    CafeAmericano.Image = "@drawable/image_cafeamericano";
+                    CafeAmericano.Category = "Bebida";
+                    CafeAmericano.Price = 14;
 
-                    Starbucks.Items.add(ChocolateClassico);
+                    Starbucks.Items.add(CafeAmericano);
+                }
+                {
+                    Item Cappuccino = new Item();
+                    Cappuccino.Name = "Cappuccino";
+                    Cappuccino.Description = "Café com Chocolate Cremoso.";
+                    Cappuccino.Image = "@drawable/image_cappuccino";
+                    Cappuccino.Category = "Bebida";
+                    Cappuccino.Price = 17;
+
+                    Starbucks.Items.add(Cappuccino);
                 }
 
                 PUCPR.University.Restaurants.add(Starbucks);
             }
 
             {
-                Restaurant BurgerKing = new Restaurant();
-                BurgerKing.Name = "McDonald's";
-                BurgerKing.Logo = "@drawable/logorestaurant2";
-                BurgerKing.Banner = "@drawable/banner_mcdo";
-                BurgerKing.Items = new ArrayList<>();
+                Restaurant McDonalds = new Restaurant();
+                McDonalds.Name = "McDonald's";
+                McDonalds.Logo = "@drawable/logorestaurant_mcdonalds";
+                McDonalds.Banner = "@drawable/banner_mcdo";
+                McDonalds.Items = new ArrayList<>();
+
+                // TODO: Add Items.
 
                 {
-                    // TODO: Add Items.
+                    Item BigMac = new Item();
+                    BigMac.Name = "Big Mac";
+                    BigMac.Description = "Dois hambúrgueres (100% carne bovina), alface americana, queijo cheddar, maionese Big Mac, cebola, picles e pão com gergelim.";
+                    BigMac.Image = "@drawable/image_bigmac";
+                    BigMac.Category = "Hamburger Clássicos";
+                    BigMac.Price = 30;
+
+                    McDonalds.Items.add(BigMac);
+                }
+                {
+                    Item Cheeseburger = new Item();
+                    Cheeseburger.Name = "Cheeseburger";
+                    Cheeseburger.Description = "Um hamburguer (100% carne bovina), queijo cheddar, cebola, picles, ketchup, mostarda e pão sem gergelim.";
+                    Cheeseburger.Image = "@drawable/image_cheesebuguer";
+                    Cheeseburger.Category = "Hamburger Clássicos";
+                    Cheeseburger.Price = 15;
+
+                    McDonalds.Items.add(Cheeseburger);
+                }
+                {
+                    Item DuploCheddarMcMelt = new Item();
+                    DuploCheddarMcMelt.Name = "Duplo Cheddar McMelt";
+                    DuploCheddarMcMelt.Description = "Dois hambúrgueres (100% carne bovina), molho sabor cheddar, cebola ao molho shoyu e pão escuro com gergelim.";
+                    DuploCheddarMcMelt.Image = "@drawable/image_duplo_cheddar_mcmelt";
+                    DuploCheddarMcMelt.Category = "Hamburger Clássicos";
+                    DuploCheddarMcMelt.Price = 40;
+
+                    McDonalds.Items.add(DuploCheddarMcMelt);
+                }
+                {
+                    Item BigTasty = new Item();
+                    BigTasty.Name = "Big Tasty";
+                    BigTasty.Description = "Um hambúrguer (100% carne bovina), queijo, tomate, alface americana, cebola e molho Tasty.";
+                    BigTasty.Image = "@drawable/image_big_tasty";
+                    BigTasty.Category = "Família Tasty";
+                    BigTasty.Price = 24;
+
+                    McDonalds.Items.add(BigTasty);
+                }
+                {
+                    Item BigTastyTurboBacon = new Item();
+                    BigTastyTurboBacon.Name = "Big Tasty Turbo Bacon";
+                    BigTastyTurboBacon.Description = "Dois Hamburgueres (100% carne bovina), bacon, queijo emental, bacon crispy, tomate, alface americana, cebola, maionese Tasty e pão com gergelim.";
+                    BigTastyTurboBacon.Image = "@drawable/image_big_tasty_turbo";
+                    BigTastyTurboBacon.Category = "Família Tasty";
+                    BigTastyTurboBacon.Price = 35;
+
+                    McDonalds.Items.add(BigTastyTurboBacon);
                 }
 
-                PUCPR.University.Restaurants.add(BurgerKing);
+
+                PUCPR.University.Restaurants.add(McDonalds);
             }
 
             {
-                Restaurant BurgerKing = new Restaurant();
-                BurgerKing.Name = "SubWay";
-                BurgerKing.Logo = "@drawable/logorestaurant3";
-                BurgerKing.Banner = "@drawable/banner_sub_way";
-                BurgerKing.Items = new ArrayList<>();
+                Restaurant SubWay = new Restaurant();
+                SubWay.Name = "SubWay";
+                SubWay.Logo = "@drawable/logorestaurant_subway";
+                SubWay.Banner = "@drawable/banner_sub_way";
+                SubWay.Items = new ArrayList<>();
 
+                // TODO: Add Items.
                 {
-                    // TODO: Add Items.
+                    Item FrangoAssado = new Item();
+                    FrangoAssado.Name = "Frango Assado";
+                    FrangoAssado.Description = "Acompanhado do delicioso molho Caipira. E claro, nosso pão sempre fresquinho, queijo e vegetais à sua escolha. Nos tamanhos de 15cm e 30cm!";
+                    FrangoAssado.Image = "@drawable/image_frango_assado";
+                    FrangoAssado.Category = "Sanduiches";
+                    FrangoAssado.Price = 25;
+
+                    SubWay.Items.add(FrangoAssado);
+                }
+                {
+                    Item CarneDefumadacomCreamCheese = new Item();
+                    CarneDefumadacomCreamCheese.Name = "Carne Defumada";
+                    CarneDefumadacomCreamCheese.Description = "Deliciosas tiras de carne defumada misturadas com cream cheese. Uma delicia de dar água da boca. Nos tamanhos de 15cm e 30cm!";
+                    CarneDefumadacomCreamCheese.Image = "@drawable/image_carne_defumada";
+                    CarneDefumadacomCreamCheese.Category = "Sanduiches";
+                    CarneDefumadacomCreamCheese.Price = 36;
+
+                    SubWay.Items.add(CarneDefumadacomCreamCheese);
+                }
+                {
+                    Item Italiano = new Item();
+                    Italiano.Name = "B.M.T.® Italiano";
+                    Italiano.Description = "Servido em pão fresquinho, com fatias de salame, peperoni, presunto, vegetais e condimentos à sua escolha. Nos tamanhos de 15cm e 30cm!";
+                    Italiano.Image = "@drawable/image_italiano";
+                    Italiano.Category = "Sanduiches";
+                    Italiano.Price = 30;
+
+                    SubWay.Items.add(Italiano);
+                }
+                {
+                    Item CarneSupreme = new Item();
+                    CarneSupreme.Name = "Carne Supreme";
+                    CarneSupreme.Description = "Acompanhado do delicioso molho Supreme. E claro, nosso pão sempre fresquinho, queijo e vegetais à sua escolha. Nos tamanhos de 15cm e 30cm!";
+                    CarneSupreme.Image = "@drawable/image_carne_supreme";
+                    CarneSupreme.Category = "Sanduiches";
+                    CarneSupreme.Price = 28;
+
+                    SubWay.Items.add(CarneSupreme);
                 }
 
-                PUCPR.University.Restaurants.add(BurgerKing);
+
+                PUCPR.University.Restaurants.add(SubWay);
             }
 
             {
                 Restaurant BurgerKing = new Restaurant();
                 BurgerKing.Name = "Burger King";
-                BurgerKing.Logo = "@drawable/logorestaurant4";
+                BurgerKing.Logo = "@drawable/logorestaurant_burguerking";
                 BurgerKing.Banner = "@drawable/banner_burger_king";
                 BurgerKing.Items = new ArrayList<>();
 
@@ -108,31 +206,31 @@ public class Database {
             }
 
             {
-                Restaurant BurgerKing = new Restaurant();
-                BurgerKing.Name = "Habib's";
-                BurgerKing.Logo = "@drawable/logorestaurant5";
-                BurgerKing.Banner = "@drawable/banner_habibs";
-                BurgerKing.Items = new ArrayList<>();
+                Restaurant Habibs = new Restaurant();
+                Habibs.Name = "Habib's";
+                Habibs.Logo = "@drawable/logorestaurant_habibs";
+                Habibs.Banner = "@drawable/banner_habibs";
+                Habibs.Items = new ArrayList<>();
 
                 {
                     // TODO: Add Items.
                 }
 
-                PUCPR.University.Restaurants.add(BurgerKing);
+                PUCPR.University.Restaurants.add(Habibs);
             }
 
             {
-                Restaurant BurgerKing = new Restaurant();
-                BurgerKing.Name = "Cacau Show";
-                BurgerKing.Logo = "@drawable/logorestaurant6";
-                BurgerKing.Banner = "@drawable/banner_cacau";
-                BurgerKing.Items = new ArrayList<>();
+                Restaurant CacauShow = new Restaurant();
+                CacauShow.Name = "Cacau Show";
+                CacauShow.Logo = "@drawable/logorestaurant_cacaushow";
+                CacauShow.Banner = "@drawable/banner_cacau";
+                CacauShow.Items = new ArrayList<>();
 
                 {
                     // TODO: Add Items.
                 }
 
-                PUCPR.University.Restaurants.add(BurgerKing);
+                PUCPR.University.Restaurants.add(CacauShow);
             }
 
 
@@ -153,29 +251,29 @@ public class Database {
         }
 
         {
-            UserUniversity UNICURITIBA = new UserUniversity();
-            UNICURITIBA.University = new University();
-            UNICURITIBA.University.Name = "Universidade Positivo";
-            UNICURITIBA.University.Description = "Endereço: Cidade Industrial de Curitiba, Curitiba - PR, 81290-000";
-            UNICURITIBA.University.Image = "@drawable/logo_up";
-            UNICURITIBA.University.Restaurants = new ArrayList<>();
+            UserUniversity POSITIVO = new UserUniversity();
+            POSITIVO.University = new University();
+            POSITIVO.University.Name = "Universidade Positivo";
+            POSITIVO.University.Description = "Endereço: Cidade Industrial de Curitiba, Curitiba - PR, 81290-000";
+            POSITIVO.University.Image = "@drawable/logo_up";
+            POSITIVO.University.Restaurants = new ArrayList<>();
 
             // TODO: Create Restaurants.
 
-            Universities.add(UNICURITIBA);
+            Universities.add(POSITIVO);
         }
 
         {
-            UserUniversity UNICURITIBA = new UserUniversity();
-            UNICURITIBA.University = new University();
-            UNICURITIBA.University.Name = "Universidade Tuiuti do Paraná";
-            UNICURITIBA.University.Description = "Endereço: Rua Sydnei Antonio Rangel Santos, 238 - Santo Inácio, Curitiba - PR, 82010-330";
-            UNICURITIBA.University.Image = "@drawable/logo_utp";
-            UNICURITIBA.University.Restaurants = new ArrayList<>();
+            UserUniversity TUIUTI = new UserUniversity();
+            TUIUTI.University = new University();
+            TUIUTI.University.Name = "Universidade Tuiuti do Paraná";
+            TUIUTI.University.Description = "Endereço: Rua Sydnei Antonio Rangel Santos, 238 - Santo Inácio, Curitiba - PR, 82010-330";
+            TUIUTI.University.Image = "@drawable/logo_utp";
+            TUIUTI.University.Restaurants = new ArrayList<>();
 
             // TODO: Create Restaurants.
 
-            Universities.add(UNICURITIBA);
+            Universities.add(TUIUTI);
         }
 
         CurrentUniversity = Universities.get(0);

@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:contentDescription="@string/carviewrestaurant"
-            android:src="@drawable/logorestaurant1" />
+            android:src="@drawable/logorestaurant_starbucks" />
     </androidx.cardview.widget.CardView>
 
 </FrameLayout>

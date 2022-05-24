@@ -24,12 +24,8 @@ public class RestaurantScreen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.backButton.setOnClickListener(view -> returnToPreviousHomeScreen());
-        binding.buttonAgendamento.setOnClickListener(view -> openScheduling());
-
         binding.nameRestaurant.setText(Database.CurrentRestaurant.Name);
         binding.imageRestaurantBanner.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(Database.CurrentRestaurant.Banner, "drawable", getPackageName())));
-        // TODO: Set items.
-
         binding.itemList.setAdapter(new ItemAdapter(getLayoutInflater(), getApplicationContext()));
     }
 
