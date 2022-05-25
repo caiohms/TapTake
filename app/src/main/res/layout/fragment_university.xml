@@ -8,7 +8,7 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="393dp"
+        android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="24dp"
@@ -21,7 +21,7 @@
 
     <ListView
         android:id="@+id/universityList"
-        android:layout_width="390dp"
+        android:layout_width="match_parent"
         android:layout_height="780dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

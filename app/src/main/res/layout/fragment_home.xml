@@ -8,7 +8,7 @@
 
     <GridView
         android:id="@+id/restaurantGridView"
-        android:layout_width="393dp"
+        android:layout_width="match_parent"
         android:layout_height="648dp"
         android:numColumns="2"
         app:layout_constraintBottom_toBottomOf="parent"

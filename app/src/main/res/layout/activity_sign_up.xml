@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/fundoSignUp"
-        android:layout_width="403dp"
+        android:layout_width="match_parent"
         android:layout_height="852dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -22,7 +22,7 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="512dp"
+        android:layout_width="match_parent"
         android:layout_height="656dp"
         android:contentDescription="@string/background_image_2"
         android:scaleType="centerCrop"
@@ -36,7 +36,7 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="389dp"
+        android:layout_width="match_parent"
         android:layout_height="83dp"
         android:layout_marginTop="56dp"
         android:gravity="center"

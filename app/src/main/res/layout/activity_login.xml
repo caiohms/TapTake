@@ -8,7 +8,7 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="395dp"
+        android:layout_width="match_parent"
         android:layout_height="853dp"
         android:contentDescription="@string/login"
         android:scaleType="centerCrop"
@@ -22,7 +22,7 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="397dp"
+        android:layout_width="match_parent"
         android:layout_height="575dp"
         android:layout_marginBottom="160dp"
         android:contentDescription="@string/bottom2"
@@ -35,7 +35,7 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="389dp"
+        android:layout_width="match_parent"
         android:layout_height="83dp"
         android:layout_marginBottom="8dp"
         android:gravity="center"

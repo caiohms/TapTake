@@ -146,6 +146,7 @@ public class Database {
                 SubWay.Items = new ArrayList<>();
 
                 // TODO: Add Items.
+
                 {
                     Item FrangoAssado = new Item();
                     FrangoAssado.Name = "Frango Assado";
@@ -198,9 +199,49 @@ public class Database {
                 BurgerKing.Banner = "@drawable/banner_burger_king";
                 BurgerKing.Items = new ArrayList<>();
 
+                // TODO: Add Items.
+
                 {
-                    // TODO: Add Items.
+                    Item BarbecueBacon = new Item();
+                    BarbecueBacon.Name = "Barbecue Bacon";
+                    BarbecueBacon.Description = "Adicionamos no nosso WHOPPER® um delicioso molho barbecue e fatias super crocantes de bacon. Resultado: Perfeição! Imagem meramente ilustrativa.";
+                    BarbecueBacon.Image = "@drawable/image_barbecue_bacon";
+                    BarbecueBacon.Category = "Sanduiches";
+                    BarbecueBacon.Price = 29;
+
+                    BurgerKing.Items.add(BarbecueBacon);
                 }
+                {
+                    Item PaletaSuina = new Item();
+                    PaletaSuina.Name = "Paleta Suína";
+                    PaletaSuina.Description = "O pão com gergelim do WHOPPER®, nossa maionese de fabricação própria, alface e tomate cortados na hora, aquela nossa cebola crocante como toda Onion Rings deve ser, junto do nosso delicioso molho Furioso e queijo.";
+                    PaletaSuina.Image = "@drawable/image_barbecue_bacon";
+                    PaletaSuina.Category = "Sanduiches";
+                    PaletaSuina.Price = 30;
+
+                    BurgerKing.Items.add(PaletaSuina);
+                }
+                {
+                    Item MegaStacker4 = new Item();
+                    MegaStacker4.Name = "Mega Stacker 4.0";
+                    MegaStacker4.Description = "Muita carne, muito bacon e muito queijo. Para você se deliciar com seus ingredientes favoritos! Imagem meramente ilustrativa.";
+                    MegaStacker4.Image = "@drawable/image_mega_stacker4";
+                    MegaStacker4.Category = "Sanduiches";
+                    MegaStacker4.Price = 40;
+
+                    BurgerKing.Items.add(MegaStacker4);
+                }
+                {
+                    Item RodeioDuplo = new Item();
+                    RodeioDuplo.Name = "Rodeio Duplo";
+                    RodeioDuplo.Description = "Dois deliciosos hambúrgueres grelhados no fogo como churrasco, queijo derretido, onion rings, molho barbecue e maionese BK®. Imagem meramente ilustrativa.";
+                    RodeioDuplo.Image = "@drawable/image_rodeio_duplo";
+                    RodeioDuplo.Category = "Sanduiches";
+                    RodeioDuplo.Price = 25;
+
+                    BurgerKing.Items.add(RodeioDuplo);
+                }
+
 
                 PUCPR.University.Restaurants.add(BurgerKing);
             }
@@ -212,9 +253,49 @@ public class Database {
                 Habibs.Banner = "@drawable/banner_habibs";
                 Habibs.Items = new ArrayList<>();
 
+                // TODO: Add Items.
+
                 {
-                    // TODO: Add Items.
+                    Item EsfihaCalab = new Item();
+                    EsfihaCalab.Name = "Esfiha de Calabresa";
+                    EsfihaCalab.Description = "BIB'SFIHA DE CALABRESA";
+                    EsfihaCalab.Image = "@drawable/image_calab";
+                    EsfihaCalab.Category = "BIB'SFIHAS";
+                    EsfihaCalab.Price = 2.88;
+
+                    Habibs.Items.add(EsfihaCalab);
                 }
+                {
+                    Item EsfihaFrango = new Item();
+                    EsfihaFrango.Name = "Esfiha de Frango";
+                    EsfihaFrango.Description = "BIB'SFIHA DE FRANGO";
+                    EsfihaFrango.Image = "@drawable/image_esfiha_frango";
+                    EsfihaFrango.Category = "BIB'SFIHAS";
+                    EsfihaFrango.Price = 2.54;
+
+                    Habibs.Items.add(EsfihaFrango);
+                }
+                {
+                    Item EsfihaQueijo = new Item();
+                    EsfihaQueijo.Name = "Esfiha de Queijo";
+                    EsfihaQueijo.Description = "BIB'SFIHA DE QUEIJO";
+                    EsfihaQueijo.Image = "@drawable/image_esfiha_queijo";
+                    EsfihaQueijo.Category = "BIB'SFIHAS";
+                    EsfihaQueijo.Price = 3.78;
+
+                    Habibs.Items.add(EsfihaQueijo);
+                }
+                {
+                    Item EsfihaDoceLeite = new Item();
+                    EsfihaDoceLeite.Name = "Esfiha de Doce de Leite";
+                    EsfihaDoceLeite.Description = "BIB'SFIHA FOLHADA DE DOCE DE LEITE";
+                    EsfihaDoceLeite.Image = "@drawable/image_esfiha_doce_leite";
+                    EsfihaDoceLeite.Category = "BIB'SFIHAS";
+                    EsfihaDoceLeite.Price = 6.95;
+
+                    Habibs.Items.add(EsfihaDoceLeite);
+                }
+
 
                 PUCPR.University.Restaurants.add(Habibs);
             }
@@ -226,8 +307,47 @@ public class Database {
                 CacauShow.Banner = "@drawable/banner_cacau";
                 CacauShow.Items = new ArrayList<>();
 
+                // TODO: Add Items.
+
                 {
-                    // TODO: Add Items.
+                    Item BenditoCacaoSlack = new Item();
+                    BenditoCacaoSlack.Name = "Bendito Cacao Slack";
+                    BenditoCacaoSlack.Description = "Para quem adora sentir o sabor do chocolate intenso, numa versão exclusiva para passar no pão, na torrada, no biscoito, ou dar aquela boa colherada mesmo.";
+                    BenditoCacaoSlack.Image = "@drawable/image_bendito_cacao";
+                    BenditoCacaoSlack.Category = "Doce";
+                    BenditoCacaoSlack.Price = 32.90;
+
+                    CacauShow.Items.add(BenditoCacaoSlack);
+                }
+                {
+                    Item MomentoLacreme = new Item();
+                    MomentoLacreme.Name = "Momento Lacreme";
+                    MomentoLacreme.Description = "O Momento laCreme é composto por diversas meias trufas com 6,75g cada, de chocolate maciço.";
+                    MomentoLacreme.Image = "@drawable/image_momento_lacreme";
+                    MomentoLacreme.Category = "Doce";
+                    MomentoLacreme.Price = 29.90;
+
+                    CacauShow.Items.add(MomentoLacreme);
+                }
+                {
+                    Item DrageadoLanutAvela = new Item();
+                    DrageadoLanutAvela.Name = "Drageado Lanut Avelã";
+                    DrageadoLanutAvela.Description = "Pedaços de avelã torrada, levemente crocante envolta no delicioso chocolate ao leite, coberta com chocolate em pó.";
+                    DrageadoLanutAvela.Image = "@drawable/image_drageado_lanut";
+                    DrageadoLanutAvela.Category = "Doce";
+                    DrageadoLanutAvela.Price = 24.90;
+
+                    CacauShow.Items.add(DrageadoLanutAvela);
+                }
+                {
+                    Item TableteBenditoCacao85 = new Item();
+                    TableteBenditoCacao85.Name = "Tablete Bendito 85% Cacau";
+                    TableteBenditoCacao85.Description = "Para quem gosta dos sabores mais intensos, este tablete é o ideal. Chocolate com 85% de cacau, é a fome pelo novo, a paixão por conhecer mais. Experimente novas sensações!";
+                    TableteBenditoCacao85.Image = "@drawable/image_tablete_bendito";
+                    TableteBenditoCacao85.Category = "Doce";
+                    TableteBenditoCacao85.Price = 17.90;
+
+                    CacauShow.Items.add(TableteBenditoCacao85);
                 }
 
                 PUCPR.University.Restaurants.add(CacauShow);
