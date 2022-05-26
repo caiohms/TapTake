@@ -59,8 +59,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="carviewrestaurant">CarViewRestaurant</string>
     <string name="name_item">Name Item</string>
-    <string name="descriptionitem">DescriptionItem</string>
+    <string name="descriptionitem">Description Item</string>
     <string name="valor_item">Valor: R$</string>
     <string name="imageitem">imageItem</string>
     <string name="_0">0,00</string>
+    <string name="text_view_item">Visualizar Item</string>
+    <string name="return_to_restaurant">retornar para o restaurante</string>
+    <string name="image_item">imagem do item selecionado</string>
+    <string name="text_quantity">Escolha a quantidade:</string>
+    <string name="_1">1</string>
+    <string name="button_add">button_add</string>
+    <string name="total_payable">Total a pagar:</string>
+    <string name="button_remove">button_remove</string>
+    <string name="add">Adicionar</string>
 </resources>

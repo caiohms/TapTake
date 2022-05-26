@@ -2,9 +2,7 @@ package com.example.taptake;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.taptake.adapters.ItemAdapter;
 import com.example.taptake.data.Database;
 import com.example.taptake.data.Order;
@@ -26,16 +24,13 @@ public class RestaurantScreen extends AppCompatActivity {
         binding.backButton.setOnClickListener(view -> returnToPreviousHomeScreen());
         binding.nameRestaurant.setText(Database.CurrentRestaurant.Name);
         binding.imageRestaurantBanner.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(Database.CurrentRestaurant.Banner, "drawable", getPackageName())));
-        binding.itemList.setAdapter(new ItemAdapter(getLayoutInflater(), getApplicationContext()));
+        binding.itemList.setAdapter(new ItemAdapter(getLayoutInflater(), getApplicationContext(), yes -> {
+            Intent intent = new Intent(this, ViewItemScreen.class);
+            startActivity(intent);
+        }));
     }
 
     public void returnToPreviousHomeScreen() {
-        Intent intent = new Intent(this, HomeScreen.class);
-        startActivity(intent);
-    }
-
-    public void openScheduling() {
-        Intent intent = new Intent(this, SchedulingScreen.class);
-        startActivity(intent);
+        super.onBackPressed();
     }
 }

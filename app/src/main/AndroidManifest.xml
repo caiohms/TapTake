@@ -9,6 +9,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TapTake">
         <activity
+            android:name=".ViewItemScreen"
+            android:exported="false"
+            android:launchMode="singleTask"/>
+        <activity
             android:name=".PaymentScreen"
             android:exported="false"
             android:launchMode="singleTask" />

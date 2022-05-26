@@ -1,6 +1,5 @@
 package com.example.taptake;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +22,6 @@ public class PaymentScreen extends AppCompatActivity {
     }
 
     public void returnToPreviousSchedulingScreen() {
-        Intent intent = new Intent(this, SchedulingScreen.class);
-        startActivity(intent);
+        super.onBackPressed();
     }
 }

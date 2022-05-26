@@ -62,7 +62,6 @@ public class RestaurantFragment extends Fragment {
         CardView Card = view.findViewById(R.id.cardViewRestaurant);
         Card.setOnClickListener(view1 -> {
             Database.CurrentRestaurant = restaurant;
-
             GoToRestaurantScreen.accept(true);
         });
 

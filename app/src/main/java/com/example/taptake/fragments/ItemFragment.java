@@ -1,6 +1,7 @@
 package com.example.taptake.fragments;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +13,10 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.taptake.R;
+import com.example.taptake.ViewItemScreen;
 import com.example.taptake.data.Item;
+
+import java.util.function.Consumer;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,15 +27,17 @@ import com.example.taptake.data.Item;
 public class ItemFragment extends Fragment {
     public Context ctx;
     public Item item;
+    public Consumer<Boolean> GoToViewItem;
 
     public ItemFragment() {
         // Required empty public constructor
     }
 
-    public static ItemFragment newInstance(Context ctx, Item item) {
+    public static ItemFragment newInstance(Context ctx, Item item, Consumer<Boolean> GoToViewItem) {
         ItemFragment fragment = new ItemFragment();
         fragment.ctx = ctx;
         fragment.item = item;
+        fragment.GoToViewItem = GoToViewItem;
 
         return fragment;
     }
@@ -58,8 +64,16 @@ public class ItemFragment extends Fragment {
         priceItem.setText(String.valueOf(item.Price));
 
         CardView cardItem = view.findViewById(R.id.cardViewItem);
-//        cardItem.setOnClickListener(view1 -> );
+        cardItem.setOnClickListener(view1 -> {
+//            Database.CurrentRestaurant.Items = item;
+            GoToViewItem.accept(true);
+        });
 
         return view;
+    }
+
+    public void openViewItem() {
+        Intent intent = new Intent(getContext(), ViewItemScreen.class);
+        startActivity(intent);
     }
 }

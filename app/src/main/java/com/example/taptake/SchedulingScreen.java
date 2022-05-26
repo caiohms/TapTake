@@ -24,8 +24,7 @@ public class SchedulingScreen extends AppCompatActivity {
     }
 
     public void returnToPreviousRestaurantScreen() {
-        Intent intent = new Intent(this, RestaurantScreen.class);
-        startActivity(intent);
+        super.onBackPressed();
     }
 
     public void openPaymentScrenn() {
