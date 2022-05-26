@@ -1,7 +1,6 @@
 package com.example.taptake.fragments;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,7 +12,6 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.taptake.R;
-import com.example.taptake.ViewItemScreen;
 import com.example.taptake.data.Item;
 
 import java.util.function.Consumer;
@@ -70,10 +68,5 @@ public class ItemFragment extends Fragment {
         });
 
         return view;
-    }
-
-    public void openViewItem() {
-        Intent intent = new Intent(getContext(), ViewItemScreen.class);
-        startActivity(intent);
     }
 }

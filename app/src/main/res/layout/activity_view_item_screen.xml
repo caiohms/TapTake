@@ -50,9 +50,9 @@
         tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="180dp"
-        android:layout_height="175dp"
+        android:id="@+id/image_item"
+        android:layout_width="196dp"
+        android:layout_height="188dp"
         android:layout_marginTop="16dp"
         android:contentDescription="@string/image_item"
         app:layout_constraintEnd_toEndOf="parent"
@@ -72,12 +72,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@+id/image_item" />
 
     <TextView
         android:id="@+id/textDescriptionItem"
-        android:layout_width="380dp"
-        android:layout_height="171dp"
+        android:layout_width="386dp"
+        android:layout_height="141dp"
         android:layout_marginTop="4dp"
         android:justificationMode="inter_word"
         android:text="@string/descriptionitem"
@@ -101,64 +101,69 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textDescriptionItem" />
 
-    <TextView
-        android:id="@+id/quantityValue"
-        android:layout_width="66dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/_1"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textQuantity" />
+        app:layout_constraintTop_toBottomOf="@+id/textQuantity">
 
-    <ImageButton
-        android:id="@+id/button_add"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:contentDescription="@string/button_add"
-        app:layout_constraintEnd_toStartOf="@+id/quantityValue"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/quantityValue"
-        app:srcCompat="@drawable/ic_baseline_add_24" />
+        <ImageButton
+            android:id="@+id/button_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:contentDescription="@string/button_add"
+            app:srcCompat="@drawable/ic_baseline_add_24" />
 
-    <ImageButton
-        android:id="@+id/button_remove"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:contentDescription="@string/button_remove"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/quantityValue"
-        app:layout_constraintTop_toTopOf="@+id/quantityValue"
-        app:srcCompat="@drawable/ic_baseline_horizontal_rule_24" />
+
+        <TextView
+            android:id="@+id/quantityValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/_1"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/button_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/button_remove"
+            app:srcCompat="@drawable/ic_baseline_horizontal_rule_24" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/text_total_payable"
         android:layout_width="133dp"
         android:layout_height="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:text="@string/total_payable"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.334"
+        app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quantityValue" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
         android:id="@+id/text_value_payable"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:text="@string/_0"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.702"
+        app:layout_constraintHorizontal_bias="0.741"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/quantityValue" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
         android:id="@+id/button_GoToScheduling"
@@ -173,10 +178,10 @@
         app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_value_payable"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.212" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

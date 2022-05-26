@@ -27,6 +27,7 @@ public class RestaurantScreen extends AppCompatActivity {
         binding.itemList.setAdapter(new ItemAdapter(getLayoutInflater(), getApplicationContext(), yes -> {
             Intent intent = new Intent(this, ViewItemScreen.class);
             startActivity(intent);
+
         }));
     }
 

@@ -72,4 +72,6 @@
     <string name="total_payable">Total a pagar:</string>
     <string name="button_remove">button_remove</string>
     <string name="add">Adicionar</string>
+    <string name="finalizing_order">Finalizar Pedido</string>
+    <string name="subtext_payment">Selecione uma forma de pagamento</string>
 </resources>
