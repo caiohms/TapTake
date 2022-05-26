@@ -1,6 +1,5 @@
 package com.example.taptake.ui.university;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -27,10 +26,10 @@ public class UniversityFragment extends Fragment {
         ListView UniList = root.findViewById(R.id.universityList);
 
         UniList.setAdapter(new UserUniversityAdapter(inflater, getContext(), yes -> {
-            Intent intent = new Intent(getContext(), HomeScreen.class);
-            startActivity(intent);
+            HomeScreen backHomeScreen = (HomeScreen) getContext();
+            assert backHomeScreen != null;
+            backHomeScreen.onBackPressed();
         }));
-
         return root;
     }
 

@@ -21,7 +21,7 @@ public class Database {
             PUCPR.University.Image = "@drawable/logo_puc";
             PUCPR.University.Restaurants = new ArrayList<>();
 
-            // TODO: Add Items.
+            // TODO: Create Restaurants.
 
             {
                 Restaurant Starbucks = new Restaurant();
@@ -29,6 +29,8 @@ public class Database {
                 Starbucks.Logo = "@drawable/logorestaurant_starbucks";
                 Starbucks.Banner = "@drawable/banner_starbucks";
                 Starbucks.Items = new ArrayList<>();
+
+                // TODO: Add Items.
 
                 {
                     Item CafeMocha = new Item();
@@ -73,7 +75,6 @@ public class Database {
 
                 PUCPR.University.Restaurants.add(Starbucks);
             }
-
             {
                 Restaurant McDonalds = new Restaurant();
                 McDonalds.Name = "McDonald's";
@@ -137,7 +138,6 @@ public class Database {
 
                 PUCPR.University.Restaurants.add(McDonalds);
             }
-
             {
                 Restaurant SubWay = new Restaurant();
                 SubWay.Name = "SubWay";
@@ -191,7 +191,6 @@ public class Database {
 
                 PUCPR.University.Restaurants.add(SubWay);
             }
-
             {
                 Restaurant BurgerKing = new Restaurant();
                 BurgerKing.Name = "Burger King";
@@ -245,7 +244,6 @@ public class Database {
 
                 PUCPR.University.Restaurants.add(BurgerKing);
             }
-
             {
                 Restaurant Habibs = new Restaurant();
                 Habibs.Name = "Habib's";
@@ -299,7 +297,6 @@ public class Database {
 
                 PUCPR.University.Restaurants.add(Habibs);
             }
-
             {
                 Restaurant CacauShow = new Restaurant();
                 CacauShow.Name = "Cacau Show";
@@ -352,11 +349,115 @@ public class Database {
 
                 PUCPR.University.Restaurants.add(CacauShow);
             }
+            {
+                Restaurant Giraffas = new Restaurant();
+                Giraffas.Name = "Giraffas";
+                Giraffas.Logo = "@drawable/logorestaurantgiraffas";
+                Giraffas.Banner = "@drawable/banner_giraffas";
+                Giraffas.Items = new ArrayList<>();
+
+                // TODO: Add Items.
+
+                {
+                    Item Bisteca = new Item();
+                    Bisteca.Name = "Churrasquito de Bisteca";
+                    Bisteca.Description = "Uma deliciosa pedida: 1 bisteca (aprox.. 120g) e 1 linguiça suína (aprox.. 60g). Sugestão: molho madeira.";
+                    Bisteca.Image = "image_bisteca";
+                    Bisteca.Category = "Churrasco";
+                    Bisteca.Price = 54.99;
+
+                    Giraffas.Items.add(Bisteca);
+                }
+                {
+                    Item Coxxao = new Item();
+                    Coxxao.Name = "Churrasco de Coxxão";
+                    Coxxao.Description = "1 porção de coxa e sobrecoxa desossadas e temperadas (aprox. 195 g). Acompanha 2 linguiças suínas (aprox.60 g cada).";
+                    Coxxao.Image = "image_coxxao";
+                    Coxxao.Category = "Churrasco";
+                    Coxxao.Price = 60.99;
+
+                    Giraffas.Items.add(Coxxao);
+                }
+                {
+                    Item BistecasSuinas = new Item();
+                    BistecasSuinas.Name = "Bistecas Suínas";
+                    BistecasSuinas.Description = "2 bistecas suínas temperadas no capricho (aprox. 120 g). Acompanha 1 linguiça suína (aprox. 60g).";
+                    BistecasSuinas.Image = "image_bistecas_duinas";
+                    BistecasSuinas.Category = "Churrasco";
+                    BistecasSuinas.Price = 52.99;
+
+                    Giraffas.Items.add(BistecasSuinas);
+                }
+                {
+                    Item Picanha = new Item();
+                    Picanha.Name = "Churrasco de Picanha";
+                    Picanha.Description = "1 generoso bife da picanha maturada (aprox 100 g) com o ponto à sua escolha. Acompanha 2 linguiças suínas (aprox 60 g cada).";
+                    Picanha.Image = "image_picanha";
+                    Picanha.Category = "Churrasco";
+                    Picanha.Price = 70.99;
+
+                    Giraffas.Items.add(Picanha);
+                }
+
+                PUCPR.University.Restaurants.add(Giraffas);
+            }
+            {
+                Restaurant KFC = new Restaurant();
+                KFC.Name = "Kentucky Fried Chicken";
+                KFC.Logo = "@drawable/logorestaurant_kfc";
+                KFC.Banner = "@drawable/banner_kfc";
+                KFC.Items = new ArrayList<>();
+
+                // TODO: Add Items.
+
+                {
+                    Item BaldeFrango = new Item();
+                    BaldeFrango.Name = "Pedaços de Frango";
+                    BaldeFrango.Description = "Deliciosos pedaços de frango, empanados com a Receita Secreta, Receita Crocante ou meio a meio.";
+                    BaldeFrango.Image = "@drawable/image_baldekfc";
+                    BaldeFrango.Category = "Baldes";
+                    BaldeFrango.Price = 35.99;
+
+                    KFC.Items.add(BaldeFrango);
+                }
+                {
+                    Item WowBoxDoubleCrunch = new Item();
+                    WowBoxDoubleCrunch.Name = "Wow Box Double Crunch";
+                    WowBoxDoubleCrunch.Description = "Aqui é você quem manda: o que vai querer no seu Wow Box além do Double Crunch? 1 pedaço ou 1 tirinha?";
+                    WowBoxDoubleCrunch.Image = "@drawable/image_wow_box_double_crunch";
+                    WowBoxDoubleCrunch.Category = "Box";
+                    WowBoxDoubleCrunch.Price = 55.99;
+
+                    KFC.Items.add(WowBoxDoubleCrunch);
+                }
+                {
+                    Item BigBox = new Item();
+                    BigBox.Name = "Big Box";
+                    BigBox.Description = "Com o Big Box KFC, você escolhe seu sanduíche, 2 pedaços ou 2 tirinhas, com batata frita e refrigerante.";
+                    BigBox.Image = "@drawable/image_bigbox";
+                    BigBox.Category = "Box";
+                    BigBox.Price = 82.99;
+
+                    KFC.Items.add(BigBox);
+                }
+                {
+                    Item WowBoxDoubleBBQ = new Item();
+                    WowBoxDoubleBBQ.Name = "Wow Box Double BBQ";
+                    WowBoxDoubleBBQ.Description = "Wow! Conseguimos deixar o Double Crunch BBQ ainda melhor. Foi só colocar o sanduíche dentro de um box cheio de batata frita e ainda acrescentar mais 1 pedaço ou 1 tirinha, você escolhe.";
+                    WowBoxDoubleBBQ.Image = "@drawable/image_bbq";
+                    WowBoxDoubleBBQ.Category = "Box";
+                    WowBoxDoubleBBQ.Price = 75.99;
+
+                    KFC.Items.add(WowBoxDoubleBBQ);
+                }
+
+
+                PUCPR.University.Restaurants.add(KFC);
+            }
 
 
             Universities.add(PUCPR);
         }
-
         {
             UserUniversity UNICURITIBA = new UserUniversity();
             UNICURITIBA.University = new University();
@@ -366,6 +467,331 @@ public class Database {
             UNICURITIBA.University.Restaurants = new ArrayList<>();
 
             // TODO: Create Restaurants.
+
+            {
+                Restaurant KFC = new Restaurant();
+                KFC.Name = "Kentucky Fried Chicken";
+                KFC.Logo = "@drawable/logorestaurant_kfc";
+                KFC.Banner = "@drawable/banner_kfc";
+                KFC.Items = new ArrayList<>();
+
+                // TODO: Add Items.
+
+                {
+                    Item BaldeFrango = new Item();
+                    BaldeFrango.Name = "Pedaços de Frango";
+                    BaldeFrango.Description = "Deliciosos pedaços de frango, empanados com a Receita Secreta, Receita Crocante ou meio a meio.";
+                    BaldeFrango.Image = "@drawable/image_baldekfc";
+                    BaldeFrango.Category = "Baldes";
+                    BaldeFrango.Price = 35.99;
+
+                    KFC.Items.add(BaldeFrango);
+                }
+                {
+                    Item WowBoxDoubleCrunch = new Item();
+                    WowBoxDoubleCrunch.Name = "Wow Box Double Crunch";
+                    WowBoxDoubleCrunch.Description = "Aqui é você quem manda: o que vai querer no seu Wow Box além do Double Crunch? 1 pedaço ou 1 tirinha?";
+                    WowBoxDoubleCrunch.Image = "@drawable/image_wow_box_double_crunch";
+                    WowBoxDoubleCrunch.Category = "Box";
+                    WowBoxDoubleCrunch.Price = 55.99;
+
+                    KFC.Items.add(WowBoxDoubleCrunch);
+                }
+                {
+                    Item BigBox = new Item();
+                    BigBox.Name = "Big Box";
+                    BigBox.Description = "Com o Big Box KFC, você escolhe seu sanduíche, 2 pedaços ou 2 tirinhas, com batata frita e refrigerante.";
+                    BigBox.Image = "@drawable/image_bigbox";
+                    BigBox.Category = "Box";
+                    BigBox.Price = 82.99;
+
+                    KFC.Items.add(BigBox);
+                }
+                {
+                    Item WowBoxDoubleBBQ = new Item();
+                    WowBoxDoubleBBQ.Name = "Wow Box Double BBQ";
+                    WowBoxDoubleBBQ.Description = "Wow! Conseguimos deixar o Double Crunch BBQ ainda melhor. Foi só colocar o sanduíche dentro de um box cheio de batata frita e ainda acrescentar mais 1 pedaço ou 1 tirinha, você escolhe.";
+                    WowBoxDoubleBBQ.Image = "@drawable/image_bbq";
+                    WowBoxDoubleBBQ.Category = "Box";
+                    WowBoxDoubleBBQ.Price = 75.99;
+
+                    KFC.Items.add(WowBoxDoubleBBQ);
+                }
+
+
+                UNICURITIBA.University.Restaurants.add(KFC);
+            }
+            {
+                Restaurant PizzaHut = new Restaurant();
+                PizzaHut.Name = "Pizza Hut";
+                PizzaHut.Logo = "@drawable/logorestaurant_pizzahut";
+                PizzaHut.Banner = "@drawable/banner_pizzahut";
+                PizzaHut.Items = new ArrayList<>();
+
+                // TODO: Add Items.
+
+                {
+                    Item PizzaCountry = new Item();
+                    PizzaCountry.Name = "Pizza Country";
+                    PizzaCountry.Description = "Queijo Hut, bacon, frango e cream cheese";
+                    PizzaCountry.Image = "@drawable/image_pizza_country";
+                    PizzaCountry.Category = "Pizza";
+                    PizzaCountry.Price = 104.99;
+
+                    PizzaHut.Items.add(PizzaCountry);
+                }
+                {
+                    Item CornBacon = new Item();
+                    CornBacon.Name = "Corn & Bacon";
+                    CornBacon.Description = "Mais uma surpreendente receita Pizza Hut. Queijo Hut, fatias suculentas do melhor bacon e milho selecionado";
+                    CornBacon.Image = "@drawable/image_corn_bacon";
+                    CornBacon.Category = "Pizza";
+                    CornBacon.Price = 100.99;
+
+                    PizzaHut.Items.add(CornBacon);
+                }
+                {
+                    Item Supreme = new Item();
+                    Supreme.Name = "Supreme";
+                    Supreme.Description = "Molho de tomate, pepperoni, cebola, pimentão, champignon, carnes bovina e suína e queijo Hut";
+                    Supreme.Image = "@drawable/image_supreme";
+                    Supreme.Category = "Pizza";
+                    Supreme.Price = 95.99;
+
+                    PizzaHut.Items.add(Supreme);
+                }
+                {
+                    Item Pepperoni = new Item();
+                    Pepperoni.Name = "Pepperoni";
+                    Pepperoni.Description = "Fatias de pepperoni servidas sobre generosa camada de queijo hut e molho de tomate";
+                    Pepperoni.Image = "@drawable/image_pepperoni";
+                    Pepperoni.Category = "Pizza";
+                    Pepperoni.Price = 89.99;
+
+                    PizzaHut.Items.add(Pepperoni);
+                }
+
+                UNICURITIBA.University.Restaurants.add(PizzaHut);
+            }
+            {
+                Restaurant Giraffas = new Restaurant();
+                Giraffas.Name = "Giraffas";
+                Giraffas.Logo = "@drawable/logorestaurantgiraffas";
+                Giraffas.Banner = "@drawable/banner_giraffas";
+                Giraffas.Items = new ArrayList<>();
+
+                // TODO: Add Items.
+
+                {
+                    Item Bisteca = new Item();
+                    Bisteca.Name = "Churrasquito de Bisteca";
+                    Bisteca.Description = "Uma deliciosa pedida: 1 bisteca (aprox.. 120g) e 1 linguiça suína (aprox.. 60g). Sugestão: molho madeira.";
+                    Bisteca.Image = "image_bisteca";
+                    Bisteca.Category = "Churrasco";
+                    Bisteca.Price = 54.99;
+
+                    Giraffas.Items.add(Bisteca);
+                }
+                {
+                    Item Coxxao = new Item();
+                    Coxxao.Name = "Churrasco de Coxxão";
+                    Coxxao.Description = "1 porção de coxa e sobrecoxa desossadas e temperadas (aprox. 195 g). Acompanha 2 linguiças suínas (aprox.60 g cada).";
+                    Coxxao.Image = "image_coxxao";
+                    Coxxao.Category = "Churrasco";
+                    Coxxao.Price = 60.99;
+
+                    Giraffas.Items.add(Coxxao);
+                }
+                {
+                    Item BistecasSuinas = new Item();
+                    BistecasSuinas.Name = "Bistecas Suínas";
+                    BistecasSuinas.Description = "2 bistecas suínas temperadas no capricho (aprox. 120 g). Acompanha 1 linguiça suína (aprox. 60g).";
+                    BistecasSuinas.Image = "image_bistecas_duinas";
+                    BistecasSuinas.Category = "Churrasco";
+                    BistecasSuinas.Price = 52.99;
+
+                    Giraffas.Items.add(BistecasSuinas);
+                }
+                {
+                    Item Picanha = new Item();
+                    Picanha.Name = "Churrasco de Picanha";
+                    Picanha.Description = "1 generoso bife da picanha maturada (aprox 100 g) com o ponto à sua escolha. Acompanha 2 linguiças suínas (aprox 60 g cada).";
+                    Picanha.Image = "image_picanha";
+                    Picanha.Category = "Churrasco";
+                    Picanha.Price = 70.99;
+
+                    Giraffas.Items.add(Picanha);
+                }
+
+                UNICURITIBA.University.Restaurants.add(Giraffas);
+            }
+            {
+                Restaurant Starbucks = new Restaurant();
+                Starbucks.Name = "StarBucks";
+                Starbucks.Logo = "@drawable/logorestaurant_starbucks";
+                Starbucks.Banner = "@drawable/banner_starbucks";
+                Starbucks.Items = new ArrayList<>();
+
+                // TODO: Add Items.
+
+                {
+                    Item CafeMocha = new Item();
+                    CafeMocha.Name = "Café Mocha";
+                    CafeMocha.Description = "Preparado no método tradicional.";
+                    CafeMocha.Image = "@drawable/image_cafe_mocha";
+                    CafeMocha.Category = "Bebida";
+                    CafeMocha.Price = 16;
+
+                    Starbucks.Items.add(CafeMocha);
+                }
+                {
+                    Item DarkChocolate = new Item();
+                    DarkChocolate.Name = "Dark Chocolate Mocha";
+                    DarkChocolate.Description = "Perfeito para degustar com amigos.";
+                    DarkChocolate.Image = "@drawable/image_darkchocolate";
+                    DarkChocolate.Category = "Bebida";
+                    DarkChocolate.Price = 20;
+
+                    Starbucks.Items.add(DarkChocolate);
+                }
+                {
+                    Item CafeAmericano = new Item();
+                    CafeAmericano.Name = "Café Americano";
+                    CafeAmericano.Description = "Café com Chocolate Cremoso.";
+                    CafeAmericano.Image = "@drawable/image_cafeamericano";
+                    CafeAmericano.Category = "Bebida";
+                    CafeAmericano.Price = 14;
+
+                    Starbucks.Items.add(CafeAmericano);
+                }
+                {
+                    Item Cappuccino = new Item();
+                    Cappuccino.Name = "Cappuccino";
+                    Cappuccino.Description = "Café com Chocolate Cremoso.";
+                    Cappuccino.Image = "@drawable/image_cappuccino";
+                    Cappuccino.Category = "Bebida";
+                    Cappuccino.Price = 17;
+
+                    Starbucks.Items.add(Cappuccino);
+                }
+
+                UNICURITIBA.University.Restaurants.add(Starbucks);
+            }
+            {
+                Restaurant McDonalds = new Restaurant();
+                McDonalds.Name = "McDonald's";
+                McDonalds.Logo = "@drawable/logorestaurant_mcdonalds";
+                McDonalds.Banner = "@drawable/banner_mcdo";
+                McDonalds.Items = new ArrayList<>();
+
+                // TODO: Add Items.
+
+                {
+                    Item BigMac = new Item();
+                    BigMac.Name = "Big Mac";
+                    BigMac.Description = "Dois hambúrgueres (100% carne bovina), alface americana, queijo cheddar, maionese Big Mac, cebola, picles e pão com gergelim.";
+                    BigMac.Image = "@drawable/image_bigmac";
+                    BigMac.Category = "Hamburger Clássicos";
+                    BigMac.Price = 30;
+
+                    McDonalds.Items.add(BigMac);
+                }
+                {
+                    Item Cheeseburger = new Item();
+                    Cheeseburger.Name = "Cheeseburger";
+                    Cheeseburger.Description = "Um hamburguer (100% carne bovina), queijo cheddar, cebola, picles, ketchup, mostarda e pão sem gergelim.";
+                    Cheeseburger.Image = "@drawable/image_cheesebuguer";
+                    Cheeseburger.Category = "Hamburger Clássicos";
+                    Cheeseburger.Price = 15;
+
+                    McDonalds.Items.add(Cheeseburger);
+                }
+                {
+                    Item DuploCheddarMcMelt = new Item();
+                    DuploCheddarMcMelt.Name = "Duplo Cheddar McMelt";
+                    DuploCheddarMcMelt.Description = "Dois hambúrgueres (100% carne bovina), molho sabor cheddar, cebola ao molho shoyu e pão escuro com gergelim.";
+                    DuploCheddarMcMelt.Image = "@drawable/image_duplo_cheddar_mcmelt";
+                    DuploCheddarMcMelt.Category = "Hamburger Clássicos";
+                    DuploCheddarMcMelt.Price = 40;
+
+                    McDonalds.Items.add(DuploCheddarMcMelt);
+                }
+                {
+                    Item BigTasty = new Item();
+                    BigTasty.Name = "Big Tasty";
+                    BigTasty.Description = "Um hambúrguer (100% carne bovina), queijo, tomate, alface americana, cebola e molho Tasty.";
+                    BigTasty.Image = "@drawable/image_big_tasty";
+                    BigTasty.Category = "Família Tasty";
+                    BigTasty.Price = 24;
+
+                    McDonalds.Items.add(BigTasty);
+                }
+                {
+                    Item BigTastyTurboBacon = new Item();
+                    BigTastyTurboBacon.Name = "Big Tasty Turbo Bacon";
+                    BigTastyTurboBacon.Description = "Dois Hamburgueres (100% carne bovina), bacon, queijo emental, bacon crispy, tomate, alface americana, cebola, maionese Tasty e pão com gergelim.";
+                    BigTastyTurboBacon.Image = "@drawable/image_big_tasty_turbo";
+                    BigTastyTurboBacon.Category = "Família Tasty";
+                    BigTastyTurboBacon.Price = 35;
+
+                    McDonalds.Items.add(BigTastyTurboBacon);
+                }
+
+
+                UNICURITIBA.University.Restaurants.add(McDonalds);
+            }
+            {
+                Restaurant SubWay = new Restaurant();
+                SubWay.Name = "SubWay";
+                SubWay.Logo = "@drawable/logorestaurant_subway";
+                SubWay.Banner = "@drawable/banner_sub_way";
+                SubWay.Items = new ArrayList<>();
+
+                // TODO: Add Items.
+
+                {
+                    Item FrangoAssado = new Item();
+                    FrangoAssado.Name = "Frango Assado";
+                    FrangoAssado.Description = "Acompanhado do delicioso molho Caipira. E claro, nosso pão sempre fresquinho, queijo e vegetais à sua escolha. Nos tamanhos de 15cm e 30cm!";
+                    FrangoAssado.Image = "@drawable/image_frango_assado";
+                    FrangoAssado.Category = "Sanduiches";
+                    FrangoAssado.Price = 25;
+
+                    SubWay.Items.add(FrangoAssado);
+                }
+                {
+                    Item CarneDefumadacomCreamCheese = new Item();
+                    CarneDefumadacomCreamCheese.Name = "Carne Defumada";
+                    CarneDefumadacomCreamCheese.Description = "Deliciosas tiras de carne defumada misturadas com cream cheese. Uma delicia de dar água da boca. Nos tamanhos de 15cm e 30cm!";
+                    CarneDefumadacomCreamCheese.Image = "@drawable/image_carne_defumada";
+                    CarneDefumadacomCreamCheese.Category = "Sanduiches";
+                    CarneDefumadacomCreamCheese.Price = 36;
+
+                    SubWay.Items.add(CarneDefumadacomCreamCheese);
+                }
+                {
+                    Item Italiano = new Item();
+                    Italiano.Name = "B.M.T.® Italiano";
+                    Italiano.Description = "Servido em pão fresquinho, com fatias de salame, peperoni, presunto, vegetais e condimentos à sua escolha. Nos tamanhos de 15cm e 30cm!";
+                    Italiano.Image = "@drawable/image_italiano";
+                    Italiano.Category = "Sanduiches";
+                    Italiano.Price = 30;
+
+                    SubWay.Items.add(Italiano);
+                }
+                {
+                    Item CarneSupreme = new Item();
+                    CarneSupreme.Name = "Carne Supreme";
+                    CarneSupreme.Description = "Acompanhado do delicioso molho Supreme. E claro, nosso pão sempre fresquinho, queijo e vegetais à sua escolha. Nos tamanhos de 15cm e 30cm!";
+                    CarneSupreme.Image = "@drawable/image_carne_supreme";
+                    CarneSupreme.Category = "Sanduiches";
+                    CarneSupreme.Price = 28;
+
+                    SubWay.Items.add(CarneSupreme);
+                }
+
+                UNICURITIBA.University.Restaurants.add(SubWay);
+            }
 
             Universities.add(UNICURITIBA);
         }

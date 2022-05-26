@@ -1,5 +1,6 @@
 package com.example.taptake.fragments;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -81,9 +82,21 @@ public class UniversityFragment extends Fragment {
         CardView Card = view.findViewById(R.id.cardViewUniversity);
 
         Card.setOnClickListener(view1 -> {
-            Database.CurrentUniversity = university;
+            AlertDialog.Builder builder = new AlertDialog.Builder(ctx);
+            builder.setCancelable(true);
+            builder.setTitle("Troca de Universidade");
+            builder.setMessage("Deseja mesmo trocar de Universidade?");
+            builder.setPositiveButton("Confirmar",
+                    (dialog, which) -> {
+                        Database.CurrentUniversity = university;
+                        GoToHomeScreen.accept(true);
+                    });
+            builder.setNegativeButton(android.R.string.cancel, (dialog, which) -> {
+            });
 
-            GoToHomeScreen.accept(true);
+            AlertDialog dialog = builder.create();
+            dialog.show();
+
         });
 
         // Inflate the layout for this fragment
