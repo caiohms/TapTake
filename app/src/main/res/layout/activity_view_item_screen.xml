@@ -76,7 +76,7 @@
 
     <TextView
         android:id="@+id/textDescriptionItem"
-        android:layout_width="386dp"
+        android:layout_width="350dp"
         android:layout_height="141dp"
         android:layout_marginTop="4dp"
         android:justificationMode="inter_word"

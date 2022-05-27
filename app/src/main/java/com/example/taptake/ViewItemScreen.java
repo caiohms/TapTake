@@ -22,7 +22,10 @@ public class ViewItemScreen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.backButtonRestaurant.setOnClickListener(view -> returnToRestaurant());
-        binding.imageItem.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(Database.CurrentRestaurant.Logo, "drawable", getPackageName())));
+        binding.imageItem.setImageDrawable(getResources().getDrawable(getResources().getIdentifier(Database.CurrentItem.Image, "drawable", getPackageName())));
+        binding.textNameItem.setText(Database.CurrentItem.Name);
+        binding.textDescriptionItem.setText(Database.CurrentItem.Description);
+        binding.textValuePayable.setText(String.valueOf(Database.CurrentItem.Price));
         binding.buttonGoToScheduling.setOnClickListener(view -> openScheduling());
 
         binding.buttonAdd.setOnClickListener(view -> {

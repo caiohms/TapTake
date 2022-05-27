@@ -12,6 +12,7 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.taptake.R;
+import com.example.taptake.data.Database;
 import com.example.taptake.data.Item;
 
 import java.util.function.Consumer;
@@ -64,6 +65,7 @@ public class ItemFragment extends Fragment {
         CardView cardItem = view.findViewById(R.id.cardViewItem);
         cardItem.setOnClickListener(view1 -> {
 //            Database.CurrentRestaurant.Items = item;
+            Database.CurrentItem = item;
             GoToViewItem.accept(true);
         });
 

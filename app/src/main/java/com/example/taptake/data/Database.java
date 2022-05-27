@@ -6,6 +6,7 @@ public class Database {
 
     public static ArrayList<UserUniversity> Universities = new ArrayList<>();
     public static UserUniversity CurrentUniversity = null;
+    public static Item CurrentItem = null;
     public static ArrayList<Order> OrderHistory = new ArrayList<>();
     public static Order CurrentOrder = null;
 
