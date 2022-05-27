@@ -64,7 +64,6 @@ public class ItemFragment extends Fragment {
 
         CardView cardItem = view.findViewById(R.id.cardViewItem);
         cardItem.setOnClickListener(view1 -> {
-//            Database.CurrentRestaurant.Items = item;
             Database.CurrentItem = item;
             GoToViewItem.accept(true);
         });

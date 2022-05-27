@@ -74,4 +74,6 @@
     <string name="add">Adicionar</string>
     <string name="finalizing_order">Finalizar Pedido</string>
     <string name="subtext_payment">Selecione uma forma de pagamento</string>
+    <string name="delivery">Delivery</string>
+    <string name="form_of_payment">Forma de pagamento</string>
 </resources>

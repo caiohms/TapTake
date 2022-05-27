@@ -37,7 +37,7 @@ public class HomeScreen extends AppCompatActivity {
 //         menu should be considered as top level destinations.
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_home,
-                R.id.nav_profile, R.id.nav_university, R.id.nav_requests, R.id.nav_cart)
+                R.id.nav_profile, R.id.nav_university, R.id.nav_requests, R.id.nav_cart, R.id.nav_delivery)
                 .setOpenableLayout(drawer)
                 .build();
 

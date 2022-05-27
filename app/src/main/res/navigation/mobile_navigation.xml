@@ -35,4 +35,10 @@
         android:label="@string/menu_requests"
         tools:layout="@layout/fragment_requests" />
 
+    <fragment
+        android:id="@+id/nav_delivery"
+        android:name="com.example.taptake.ui.delivery.DeliveryFragment"
+        android:label="@string/delivery"
+        tools:layout="@layout/fragment_delivery" />
+
 </navigation>

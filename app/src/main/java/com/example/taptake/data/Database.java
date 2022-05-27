@@ -9,10 +9,30 @@ public class Database {
     public static Item CurrentItem = null;
     public static ArrayList<Order> OrderHistory = new ArrayList<>();
     public static Order CurrentOrder = null;
-
     public static Restaurant CurrentRestaurant = null;
+    public static FormPayment FormPayment = null;
 
     public static void LoadDatabase() {
+        {
+            FormPayment PIX = new FormPayment();
+            PIX.Name = "PIX";
+            PIX.Image = "@drawable/logo_puc";
+        }
+        {
+            FormPayment DINHEIRO = new FormPayment();
+            DINHEIRO.Name = "Dinheiro";
+            DINHEIRO.Image = "@drawable/logo_puc";
+        }
+        {
+            FormPayment CARTAO = new FormPayment();
+            CARTAO.Name = "Cartão";
+            CARTAO.Image = "@drawable/logo_puc";
+        }
+        {
+            FormPayment PicPay = new FormPayment();
+            PicPay.Name = "PicPay";
+            PicPay.Image = "@drawable/logo_puc";
+        }
         {
             UserUniversity PUCPR = new UserUniversity();
             PUCPR.Favorite = true;

@@ -70,10 +70,13 @@
         android:layout_width="374dp"
         android:layout_height="533dp"
         android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/subtext_payment">
+        app:layout_constraintTop_toBottomOf="@+id/subtext_payment"
+        app:layout_constraintVertical_bias="0.0">
+
     </ListView>
 
     <Button

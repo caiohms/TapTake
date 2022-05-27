@@ -26,5 +26,9 @@
             android:id="@+id/nav_requests"
             android:icon="@drawable/ic_menu_requests"
             android:title="@string/menu_requests" />
+        <item
+            android:id="@+id/nav_delivery"
+            android:icon="@drawable/ic_baseline_directions_bike_24"
+            android:title="@string/delivery" />
     </group>
 </menu>

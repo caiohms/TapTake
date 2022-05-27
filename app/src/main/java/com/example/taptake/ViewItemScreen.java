@@ -37,6 +37,7 @@ public class ViewItemScreen extends AppCompatActivity {
         binding.buttonRemove.setOnClickListener(view -> {
             if (numberOrder > 1) {
                 numberOrder -= 1;
+//                binding.quantityValue.setText((CharSequence) Database.CurrentOrder);
                 binding.quantityValue.setText(String.valueOf(numberOrder));
             }
         });
