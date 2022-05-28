@@ -8,37 +8,36 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.example.taptake.data.Database;
-import com.example.taptake.fragments.PaymentFragment;
+import com.example.taptake.fragments.OrderFragment;
 
-public class PaymentAdapter extends BaseAdapter {
+public class OrderAdapter extends BaseAdapter {
 
     public LayoutInflater inflater;
     public Context ctx;
 
-    public PaymentAdapter(LayoutInflater inflater, Context ctx) {
+    public OrderAdapter(LayoutInflater inflater, Context ctx) {
         this.inflater = inflater;
         this.ctx = ctx;
     }
 
     @Override
     public int getCount() {
-        return Database.Payments.size();
+        return Database.OrderHistory.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return Database.Payments.get(i);
+        return Database.OrderHistory.get(i);
     }
 
     @Override
     public long getItemId(int i) {
-        return Database.Payments.get(i).hashCode();
+        return Database.OrderHistory.get(i).hashCode();
     }
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        PaymentFragment Fragment = PaymentFragment.newInstance(ctx, Database.Payments.get(i));
-
+        OrderFragment Fragment = OrderFragment.newInstance(Database.OrderHistory.get(i));
         return Fragment.onCreateView(inflater, viewGroup, Bundle.EMPTY);
     }
 }

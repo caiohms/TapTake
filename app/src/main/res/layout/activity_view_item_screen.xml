@@ -112,12 +112,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textQuantity">
 
         <ImageButton
-            android:id="@+id/button_add"
+            android:id="@+id/button_remove"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:contentDescription="@string/button_add"
-            app:srcCompat="@drawable/ic_baseline_add_24" />
+            android:contentDescription="@string/button_remove"
+            app:srcCompat="@drawable/ic_baseline_horizontal_rule_24" />
 
 
         <TextView
@@ -132,24 +132,24 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/button_remove"
+            android:id="@+id/button_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/button_remove"
-            app:srcCompat="@drawable/ic_baseline_horizontal_rule_24" />
+            android:contentDescription="@string/button_add"
+            app:srcCompat="@drawable/ic_baseline_add_24" />
 
     </LinearLayout>
 
     <TextView
         android:id="@+id/text_total_payable"
-        android:layout_width="133dp"
+        android:layout_width="198dp"
         android:layout_height="30dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="@string/total_payable"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintHorizontal_bias="0.174"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -157,7 +157,7 @@
         android:id="@+id/text_value_payable"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:text="@string/_0"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -166,22 +166,38 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <Button
-        android:id="@+id/button_GoToScheduling"
+        android:id="@+id/button_addItem"
         android:layout_width="294dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#ffb500"
         android:text="@string/add"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:cornerRadius="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_total_payable" />
+
+    <Button
+        android:id="@+id/button_carrinho"
+        android:layout_width="294dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#ffb500"
+        android:text="@string/goto_carrinho"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:cornerRadius="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_value_payable"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintTop_toBottomOf="@+id/button_addItem"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

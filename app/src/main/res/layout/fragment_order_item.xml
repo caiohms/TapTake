@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ItemFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="2">
+
+
+        <TextView
+            android:id="@+id/textNameItem"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/name_item"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textDescriptionItem"
+            android:layout_width="253dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="40dp"
+            android:justificationMode="inter_word"
+            android:text="@string/descriptionitem"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textQuantityItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/quantidade" />
+
+        <TextView
+            android:id="@+id/quantityItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/_0" />
+
+        <TextView
+            android:id="@+id/textPriceItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/valor_total_r" />
+
+        <TextView
+            android:id="@+id/priceItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:layout_marginTop="120dp"
+            android:text="@string/_0" />
+
+        <ImageView
+            android:id="@+id/imageItem"
+            android:layout_width="89dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="@string/imageitem"
+            android:scaleType="centerInside" />
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

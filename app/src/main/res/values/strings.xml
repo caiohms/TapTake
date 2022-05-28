@@ -69,11 +69,17 @@
     <string name="text_quantity">Escolha a quantidade:</string>
     <string name="_1">1</string>
     <string name="button_add">button_add</string>
-    <string name="total_payable">Total a pagar:</string>
-    <string name="button_remove">button_remove</string>
+    <string name="total_payable">Total a pagar: R$</string>
+    <string name="button_remove">Remover</string>
     <string name="add">Adicionar</string>
     <string name="finalizing_order">Finalizar Pedido</string>
     <string name="subtext_payment">Selecione uma forma de pagamento</string>
     <string name="delivery">Delivery</string>
     <string name="form_of_payment">Forma de pagamento</string>
+    <string name="goto_carrinho">Ir para o Carrinho</string>
+    <string name="valor_total_r">Valor Total: R$</string>
+    <string name="quantidade">Quantidade:</string>
+    <string name="valor_total_compra">Valor total da compra: R$</string>
+    <string name="agendamento">Agendamento</string>
+    <string name="text_alterar">Alterar</string>
 </resources>

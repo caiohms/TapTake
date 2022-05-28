@@ -3,8 +3,6 @@ package com.example.taptake;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowInsets;
-import android.view.WindowInsetsController;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,6 +21,7 @@ public class SignUpScreen extends AppCompatActivity {
 
         binding.buttonCadastrar.setOnClickListener(view -> openHomeScreen());
 
+        /*
         getWindow().setDecorFitsSystemWindows(true);
 
         final WindowInsetsController insetsController = getWindow().getInsetsController();
@@ -30,6 +29,7 @@ public class SignUpScreen extends AppCompatActivity {
             insetsController.hide(WindowInsets.Type.statusBars());
             insetsController.setSystemBarsBehavior(insetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
         }
+         */
     }
 
     public void openHomeScreen() {

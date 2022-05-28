@@ -1,7 +1,9 @@
 package com.example.taptake;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -17,6 +19,10 @@ import com.google.android.material.snackbar.Snackbar;
 public class HomeScreen extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityHomeScreenBinding binding;
+
+    public static NavController navController;
+
+    public static boolean GoToCarrinho = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +47,21 @@ public class HomeScreen extends AppCompatActivity {
                 .setOpenableLayout(drawer)
                 .build();
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home_screen);
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home_screen);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    }
+
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+
+        // Witchcraft!
+        if (GoToCarrinho) {
+            GoToCarrinho = false;
+
+            navController.navigate(R.id.nav_cart);
+        }
     }
 
     @Override
@@ -58,5 +76,11 @@ public class HomeScreen extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_home_screen);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void onRestauranteClick(MenuItem item) {
+        navController.popBackStack();
+        DrawerLayout layout = findViewById(R.id.drawer_layout);
+        layout.closeDrawers();
     }
 }

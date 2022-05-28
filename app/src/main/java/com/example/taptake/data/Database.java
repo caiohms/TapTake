@@ -9,29 +9,48 @@ public class Database {
     public static Item CurrentItem = null;
     public static ArrayList<Order> OrderHistory = new ArrayList<>();
     public static Order CurrentOrder = null;
+    public static OrderItem CurrentOrderItem = null;
     public static Restaurant CurrentRestaurant = null;
-    public static FormPayment FormPayment = null;
+    public static ArrayList<FormPayment> Payments = new ArrayList<>();
+
+    public static void SetCurrentItem(Item Item) {
+        CurrentItem = Item;
+        CurrentOrderItem = null;
+    }
+
+    public static void SetCurrentItem(OrderItem Item) {
+        CurrentOrderItem = Item;
+        CurrentItem = null;
+    }
 
     public static void LoadDatabase() {
         {
             FormPayment PIX = new FormPayment();
             PIX.Name = "PIX";
             PIX.Image = "@drawable/logo_puc";
+
+            Payments.add(PIX);
         }
         {
             FormPayment DINHEIRO = new FormPayment();
             DINHEIRO.Name = "Dinheiro";
             DINHEIRO.Image = "@drawable/logo_puc";
+
+            Payments.add(DINHEIRO);
         }
         {
             FormPayment CARTAO = new FormPayment();
             CARTAO.Name = "Cartão";
             CARTAO.Image = "@drawable/logo_puc";
+
+            Payments.add(CARTAO);
         }
         {
             FormPayment PicPay = new FormPayment();
             PicPay.Name = "PicPay";
             PicPay.Image = "@drawable/logo_puc";
+
+            Payments.add(PicPay);
         }
         {
             UserUniversity PUCPR = new UserUniversity();

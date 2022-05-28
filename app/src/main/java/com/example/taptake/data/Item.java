@@ -7,5 +7,4 @@ public class Item {
     public String Image;
     public String Category;
     public double Price;
-
 }

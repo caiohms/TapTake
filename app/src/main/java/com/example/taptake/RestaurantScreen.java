@@ -2,7 +2,10 @@ package com.example.taptake;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.taptake.adapters.ItemAdapter;
 import com.example.taptake.data.Database;
 import com.example.taptake.data.Order;
@@ -16,7 +19,17 @@ public class RestaurantScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Database.CurrentOrder = new Order();
+        if (Database.CurrentOrder != null) {
+            if (Database.CurrentOrder.Restaurant != Database.CurrentRestaurant) {
+                if (Database.CurrentOrder.Items.size() > 0) {
+                    Toast.makeText(getApplicationContext(), "Não será possível adicionar itens deste resturante pois já existem itens no carrinho de outro restaurante.", Toast.LENGTH_LONG).show();
+                } else {
+                    Database.CurrentOrder = new Order(Database.CurrentRestaurant);
+                }
+            }
+        } else {
+            Database.CurrentOrder = new Order(Database.CurrentRestaurant);
+        }
 
         binding = ActivityRestaurantScreenBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
