@@ -14,7 +14,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.taptake.databinding.ActivityHomeScreenBinding;
 import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.snackbar.Snackbar;
 
 public class HomeScreen extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
@@ -32,9 +31,6 @@ public class HomeScreen extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         setSupportActionBar(binding.appBarHomeScreen.toolbar);
-
-        binding.appBarHomeScreen.fab.setOnClickListener(view -> Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show());
 
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
@@ -61,6 +57,8 @@ public class HomeScreen extends AppCompatActivity {
             GoToCarrinho = false;
 
             navController.navigate(R.id.nav_cart);
+        } else {
+            onRestauranteClick(null);
         }
     }
 

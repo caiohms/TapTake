@@ -1,5 +1,6 @@
 package com.example.taptake.ui.cart;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -44,13 +45,14 @@ public class CartFragment extends Fragment {
         return root;
     }
 
+    @SuppressLint("DefaultLocale")
     public void UpdatePrice() {
-        double Value = 0;
+        double value = 0;
 
         if (Database.CurrentOrder != null)
-            Value = Database.CurrentOrder.GetPrice();
+            value = Database.CurrentOrder.GetPrice();
 
-        binding.valorTotal.setText(String.valueOf(Value));
+        binding.valorTotal.setText(String.format("%.2f",value));
     }
 
     @Override
