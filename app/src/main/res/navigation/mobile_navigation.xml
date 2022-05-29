@@ -31,9 +31,9 @@
 
     <fragment
         android:id="@+id/nav_requests"
-        android:name="com.example.taptake.ui.requests.RequestsFragment"
+        android:name="com.example.taptake.ui.order_history.OrderHistoryFragment"
         android:label="@string/menu_requests"
-        tools:layout="@layout/fragment_requests" />
+        tools:layout="@layout/fragment_order_history" />
 
     <fragment
         android:id="@+id/nav_delivery"

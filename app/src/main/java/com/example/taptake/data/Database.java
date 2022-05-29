@@ -27,28 +27,28 @@ public class Database {
         {
             FormPayment PIX = new FormPayment();
             PIX.Name = "PIX";
-            PIX.Image = "@drawable/logo_puc";
+            PIX.Image = "@drawable/image_pix";
 
             Payments.add(PIX);
         }
         {
             FormPayment DINHEIRO = new FormPayment();
             DINHEIRO.Name = "Dinheiro";
-            DINHEIRO.Image = "@drawable/logo_puc";
+            DINHEIRO.Image = "@drawable/image_dinheiro";
 
             Payments.add(DINHEIRO);
         }
         {
             FormPayment CARTAO = new FormPayment();
             CARTAO.Name = "Cartão";
-            CARTAO.Image = "@drawable/logo_puc";
+            CARTAO.Image = "@drawable/image_cartao";
 
             Payments.add(CARTAO);
         }
         {
             FormPayment PicPay = new FormPayment();
             PicPay.Name = "PicPay";
-            PicPay.Image = "@drawable/logo_puc";
+            PicPay.Image = "@drawable/image_picpay";
 
             Payments.add(PicPay);
         }
@@ -409,14 +409,14 @@ public class Database {
                     Giraffas.Items.add(Bisteca);
                 }
                 {
-                    Item Coxxao = new Item();
-                    Coxxao.Name = "Churrasco de Coxxão";
-                    Coxxao.Description = "1 porção de coxa e sobrecoxa desossadas e temperadas (aprox. 195 g). Acompanha 2 linguiças suínas (aprox.60 g cada).";
-                    Coxxao.Image = "image_coxxao";
-                    Coxxao.Category = "Churrasco";
-                    Coxxao.Price = 60.99;
+                    Item Coxao = new Item();
+                    Coxao.Name = "Churrasco de Coxão";
+                    Coxao.Description = "1 porção de coxa e sobrecoxa desossadas e temperadas (aprox. 195 g). Acompanha 2 linguiças suínas (aprox.60 g cada).";
+                    Coxao.Image = "image_coxao";
+                    Coxao.Category = "Churrasco";
+                    Coxao.Price = 60.99;
 
-                    Giraffas.Items.add(Coxxao);
+                    Giraffas.Items.add(Coxao);
                 }
                 {
                     Item BistecasSuinas = new Item();
@@ -864,4 +864,5 @@ public class Database {
 
         CurrentUniversity = Universities.get(0);
     }
+
 }

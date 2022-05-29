@@ -37,7 +37,7 @@ public class OrderAdapter extends BaseAdapter {
 
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
-        OrderFragment Fragment = OrderFragment.newInstance(Database.OrderHistory.get(i));
+        OrderFragment Fragment = OrderFragment.newInstance(ctx, Database.OrderHistory.get(i));
         return Fragment.onCreateView(inflater, viewGroup, Bundle.EMPTY);
     }
 }

@@ -67,23 +67,48 @@
 
     <ListView
         android:id="@+id/listPayment"
-        android:layout_width="374dp"
-        android:layout_height="533dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="472dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/text_forma_escolhida"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/subtext_payment"
         app:layout_constraintVertical_bias="0.0">
 
     </ListView>
 
+    <TextView
+        android:id="@+id/text_forma_escolhida"
+        android:layout_width="235dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/forma_pagamento"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_GoToScheduling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/forma_pagamento"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/text_forma_escolhida"
+        app:layout_constraintTop_toTopOf="@+id/text_forma_escolhida" />
+
     <Button
         android:id="@+id/button_GoToScheduling"
         android:layout_width="294dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="#ffb500"
         android:text="@string/finalizing_order"
         android:textAlignment="center"
@@ -93,9 +118,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listPayment"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

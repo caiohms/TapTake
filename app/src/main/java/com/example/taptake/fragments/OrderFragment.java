@@ -1,9 +1,11 @@
 package com.example.taptake.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
@@ -16,7 +18,7 @@ import com.example.taptake.data.Order;
  * create an instance of this fragment.
  */
 public class OrderFragment extends Fragment {
-
+    public Context ctx;
     public Order order;
 
     public OrderFragment() {
@@ -30,8 +32,9 @@ public class OrderFragment extends Fragment {
      * @return A new instance of fragment OrderFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static OrderFragment newInstance(Order order) {
+    public static OrderFragment newInstance(Context ctx, Order order) {
         OrderFragment fragment = new OrderFragment();
+        fragment.ctx = ctx;
         fragment.order = order;
         return fragment;
     }
@@ -47,7 +50,27 @@ public class OrderFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_order, container, false);
 
-        // TODO: Set Data.
+        //        ImageView imageItem = view.findViewById(R.id.imageItem);
+//        imageItem.setImageDrawable(ctx.getResources().getDrawable(ctx.getResources().getIdentifier(order.Item.Image, "drawable", ctx.getPackageName())));
+//
+//        TextView textNameItem = view.findViewById(R.id.textNameItem);
+//        textNameItem.setText(order.Items.get(0).Name);
+//
+//        TextView textDescriptionItem = view.findViewById(R.id.textDescriptionItem);
+//        textDescriptionItem.setText(order.Items.get(0).Description);
+//
+//        TextView restaurant_name_order = view.findViewById(R.id.restaurant_name_order);
+        //TODO o nome do pedido esta indo para o nome do restaurante!
+//        restaurant_name_order.setText(order.Restaurant.Name);
+//
+//        TextView data = view.findViewById(R.id.data_item);
+//        data.setText(String.valueOf(order.Date));
+
+        TextView priceTotal = view.findViewById(R.id.priceTotal);
+        priceTotal.setText(String.format("%.2f", order.Items.get(0).GetTotalPrice()));
+
+        TextView quantityItem = view.findViewById(R.id.quantityItem);
+        quantityItem.setText(String.valueOf(order.Items.get(0).Quantity));
 
         return view;
     }

@@ -72,7 +72,7 @@ public class OrderItemFragment extends Fragment {
         textDescriptionItem.setText(orderItem.Item.Description);
 
         TextView priceItem = view.findViewById(R.id.priceItem);
-        priceItem.setText(String.valueOf(orderItem.GetTotalPrice()));
+        priceItem.setText(String.format("%.2f",orderItem.GetTotalPrice()));
 
         TextView quantityItem = view.findViewById(R.id.quantityItem);
         quantityItem.setText(String.valueOf(orderItem.Quantity));

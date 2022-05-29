@@ -82,4 +82,8 @@
     <string name="valor_total_compra">Valor total da compra: R$</string>
     <string name="agendamento">Agendamento</string>
     <string name="text_alterar">Alterar</string>
+    <string name="forma_pagamento">Forma de pagamento escolhido:</string>
+    <string name="none">nenhuma</string>
+    <string name="restaurant_name">Nome do Restaurante:</string>
+    <string name="data_item">Data do pedido:</string>
 </resources>

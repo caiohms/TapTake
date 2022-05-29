@@ -10,6 +10,8 @@
         android:id="@+id/cardViewPayment"
         android:layout_width="match_parent"
         android:layout_height="117dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -22,7 +24,7 @@
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             android:contentDescription="@string/logo_university"
-            android:src="@drawable/logo_puc" />
+            />
 
         <TextView
             android:id="@+id/payment_name"
