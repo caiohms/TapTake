@@ -9,7 +9,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/carViewOrderHistory"
         android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:layout_height="190dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
@@ -18,46 +18,21 @@
         android:foreground="?attr/selectableItemBackground">
 
         <TextView
-            android:id="@+id/textNameItem"
+            android:id="@+id/textNameRestaurant"
             android:layout_width="251dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="110dp"
-            android:layout_marginTop="5dp"
-            android:text="@string/name_item"
+            android:layout_marginTop="50dp"
+            android:text="@string/name_restaurant"
             android:textSize="20sp"
             android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/textDescriptionItem"
-            android:layout_width="253dp"
-            android:layout_height="74dp"
-            android:layout_marginStart="110dp"
-            android:layout_marginTop="40dp"
-            android:justificationMode="inter_word"
-            android:text="@string/descriptionitem"
-            android:textSize="12sp" />
-
-        <TextView
-            android:id="@+id/text_restaurant_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="130dp"
-            android:text="@string/restaurant_name" />
-
-        <TextView
-            android:id="@+id/restaurant_name_order"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="165dp"
-            android:layout_marginTop="130dp" />
 
         <TextView
             android:id="@+id/text_data"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="165dp"
+            android:layout_marginTop="135dp"
             android:text="@string/data_item"/>
 
         <TextView
@@ -65,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="125dp"
-            android:layout_marginTop="165dp"
+            android:layout_marginTop="135dp"
             />
 
         <TextView
@@ -73,15 +48,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="165dp"
             android:text="@string/quantidade" />
 
         <TextView
             android:id="@+id/quantityItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="165dp"
             android:text="@string/_0" />
 
         <TextView
@@ -89,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="220dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="165dp"
             android:text="@string/valor_total_r" />
 
         <TextView
@@ -97,7 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="315dp"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="165dp"
             android:text="@string/_0" />
 
         <ImageView

@@ -1,10 +1,12 @@
 package com.example.taptake.fragments;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
@@ -44,33 +46,27 @@ public class OrderFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
+    @SuppressLint({"DefaultLocale", "UseCompatLoadingForDrawables"})
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_order, container, false);
 
-        //        ImageView imageItem = view.findViewById(R.id.imageItem);
-//        imageItem.setImageDrawable(ctx.getResources().getDrawable(ctx.getResources().getIdentifier(order.Item.Image, "drawable", ctx.getPackageName())));
-//
-//        TextView textNameItem = view.findViewById(R.id.textNameItem);
-//        textNameItem.setText(order.Items.get(0).Name);
-//
-//        TextView textDescriptionItem = view.findViewById(R.id.textDescriptionItem);
-//        textDescriptionItem.setText(order.Items.get(0).Description);
-//
-//        TextView restaurant_name_order = view.findViewById(R.id.restaurant_name_order);
-        //TODO o nome do pedido esta indo para o nome do restaurante!
-//        restaurant_name_order.setText(order.Restaurant.Name);
-//
-//        TextView data = view.findViewById(R.id.data_item);
-//        data.setText(String.valueOf(order.Date));
+        ImageView imageItem = view.findViewById(R.id.imageItem);
+        imageItem.setImageDrawable(ctx.getResources().getDrawable(ctx.getResources().getIdentifier(order.Restaurant.Logo, "drawable", ctx.getPackageName())));
+
+        TextView textNameRestaurant = view.findViewById(R.id.textNameRestaurant);
+        textNameRestaurant.setText(order.Restaurant.Name);
+
+        TextView data_item = view.findViewById(R.id.data_item);
+        data_item.setText(String.valueOf(order.Date));
 
         TextView priceTotal = view.findViewById(R.id.priceTotal);
-        priceTotal.setText(String.format("%.2f", order.Items.get(0).GetTotalPrice()));
+        priceTotal.setText(String.format("%.2f", order.GetPrice()));
 
         TextView quantityItem = view.findViewById(R.id.quantityItem);
-        quantityItem.setText(String.valueOf(order.Items.get(0).Quantity));
+        quantityItem.setText(String.valueOf(order.GetQuantity()));
 
         return view;
     }

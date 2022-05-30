@@ -78,7 +78,7 @@
     <string name="form_of_payment">Forma de pagamento</string>
     <string name="goto_carrinho">Ir para o Carrinho</string>
     <string name="valor_total_r">Valor Total: R$</string>
-    <string name="quantidade">Quantidade:</string>
+    <string name="quantidade">Quantidade de itens:</string>
     <string name="valor_total_compra">Valor total da compra: R$</string>
     <string name="agendamento">Agendamento</string>
     <string name="text_alterar">Alterar</string>

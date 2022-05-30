@@ -15,4 +15,8 @@ public class OrderItem extends com.example.taptake.data.Item {
     public double GetTotalPrice() {
         return Quantity * Price;
     }
+
+    public int GetQuantity() {
+        return Quantity;
+    }
 }

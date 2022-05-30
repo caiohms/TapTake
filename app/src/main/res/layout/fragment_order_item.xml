@@ -56,7 +56,7 @@
             android:id="@+id/quantityItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
+            android:layout_marginStart="155dp"
             android:layout_marginTop="120dp"
             android:text="@string/_0" />
 
@@ -72,7 +72,7 @@
             android:id="@+id/priceItem"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="320dp"
+            android:layout_marginStart="315dp"
             android:layout_marginTop="120dp"
             android:text="@string/_0" />
 

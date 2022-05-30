@@ -1,5 +1,6 @@
 package com.example.taptake.fragments;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -46,6 +47,7 @@ public class ItemFragment extends Fragment {
         super.onCreate(savedInstaceState);
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstaceState) {
         View view = inflater.inflate(R.layout.fragment_item_single, container, false);

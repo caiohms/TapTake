@@ -55,8 +55,8 @@ public class HomeScreen extends AppCompatActivity {
         // Witchcraft!
         if (GoToCarrinho) {
             GoToCarrinho = false;
-
             navController.navigate(R.id.nav_cart);
+
         } else {
             onRestauranteClick(null);
         }

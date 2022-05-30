@@ -1,5 +1,6 @@
 package com.example.taptake;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -78,7 +79,6 @@ public class ViewItemScreen extends AppCompatActivity {
                 onBackPressed();
 
             } else {
-                // TODO: Go To Carrinho.
                 HomeScreen.GoToCarrinho = true;
                 startActivity(new Intent(this, HomeScreen.class));
             }
@@ -105,9 +105,9 @@ public class ViewItemScreen extends AppCompatActivity {
         });
     }
 
+    @SuppressLint("DefaultLocale")
     private void updateItemPrice() {
         double totalPrice = CurrentItemData.Price * numberOrder;
-
-        binding.textValuePayable.setText(String.valueOf(totalPrice));
+        binding.textValuePayable.setText(String.format("%.2f", totalPrice));
     }
 }

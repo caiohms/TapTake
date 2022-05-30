@@ -39,7 +39,10 @@ public class PaymentScreen extends AppCompatActivity {
 
             Toast.makeText(getApplicationContext(), "Pedido realizado com sucesso!", Toast.LENGTH_LONG).show();
 
-            startActivity(new Intent(this, HomeScreen.class));
+            Intent intent = new Intent(this, HomeScreen.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
+
         });
     }
 

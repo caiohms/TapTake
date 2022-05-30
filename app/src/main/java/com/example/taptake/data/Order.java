@@ -27,4 +27,12 @@ public class Order {
 
         return Result;
     }
+
+    public int GetQuantity(){
+        int quantity = 0;
+        for (OrderItem Item : Items)
+            quantity += Item.GetQuantity();
+
+        return quantity;
+    }
 }
