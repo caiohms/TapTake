@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.taptake.adapters.DeliveryAdapter;
 import com.example.taptake.databinding.FragmentDeliveryBinding;
 
 public class DeliveryFragment extends Fragment {
@@ -18,6 +19,8 @@ public class DeliveryFragment extends Fragment {
 
         binding = FragmentDeliveryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
+
+        binding.listDelivery.setAdapter(new DeliveryAdapter(inflater, getContext()));
 
         return root;
     }

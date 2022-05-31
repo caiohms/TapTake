@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     tools:context=".fragments.OrderFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <androidx.cardview.widget.CardView
         android:id="@+id/carViewOrderHistory"
         android:layout_width="match_parent"

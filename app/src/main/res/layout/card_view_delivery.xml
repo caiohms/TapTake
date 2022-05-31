@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DeliveryFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDelivery"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022">
+
+        <TextView
+            android:id="@+id/textNameDelivery"
+            android:layout_width="251dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/name_restaurant"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/text_value_delivery" />
+
+        <TextView
+            android:id="@+id/price_Delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/_0" />
+
+        <ImageView
+            android:id="@+id/restaurantLogo_Delivery"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/logo_restaurant"
+            android:scaleType="centerInside" />
+
+        <Button
+            android:id="@+id/button_Accept_delivery"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="220sp"
+            android:layout_marginTop="90sp"
+            android:backgroundTint="#ffb500"
+            android:text="@string/accept_delivery"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/text_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100sp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50sp"
+            android:text="@string/text_timer" />
+
+        <TextView
+            android:id="@+id/timer_Delivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="155sp"
+            android:layout_marginTop="50sp"
+            android:textSize="15sp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,7 @@ public class OrderHistoryFragment extends Fragment {
     private FragmentOrderHistoryBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
-            ViewGroup container, Bundle savedInstanceState) {
+                             ViewGroup container, Bundle savedInstanceState) {
 
         binding = FragmentOrderHistoryBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
@@ -25,7 +25,7 @@ public class OrderHistoryFragment extends Fragment {
         return root;
     }
 
-@Override
+    @Override
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;

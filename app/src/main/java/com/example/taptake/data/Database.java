@@ -12,6 +12,7 @@ public class Database {
     public static OrderItem CurrentOrderItem = null;
     public static Restaurant CurrentRestaurant = null;
     public static ArrayList<FormPayment> Payments = new ArrayList<>();
+    public static ArrayList<Delivery> Delivery = new ArrayList<>();
 
     public static void SetCurrentItem(Item Item) {
         CurrentItem = Item;
@@ -24,6 +25,40 @@ public class Database {
     }
 
     public static void LoadDatabase() {
+
+        {
+            Delivery delivery1 = new Delivery();
+            delivery1.Name = "StarBucks";
+            delivery1.Logo = "@drawable/logorestaurant_starbucks";
+            delivery1.Hour = 0;
+            delivery1.Minute = 50;
+            delivery1.Seconds = 0;
+            delivery1.Price = 10.0;
+
+            Delivery.add(delivery1);
+        }
+        {
+            Delivery delivery2 = new Delivery();
+            delivery2.Name = "Burger King";
+            delivery2.Logo = "@drawable/logorestaurant_burguerking";
+            delivery2.Hour = 0;
+            delivery2.Minute = 30;
+            delivery2.Seconds = 0;
+            delivery2.Price = 7.0;
+
+            Delivery.add(delivery2);
+        }
+        {
+            Delivery delivery3 = new Delivery();
+            delivery3.Name = "StarBucks";
+            delivery3.Logo = "@drawable/logorestaurant_starbucks";
+            delivery3.Hour = 0;
+            delivery3.Minute = 40;
+            delivery3.Seconds = 0;
+            delivery3.Price = 5.0;
+
+            Delivery.add(delivery3);
+        }
         {
             FormPayment PIX = new FormPayment();
             PIX.Name = "PIX";

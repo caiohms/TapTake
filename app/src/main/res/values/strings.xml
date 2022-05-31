@@ -85,4 +85,9 @@
     <string name="none">nenhuma</string>
     <string name="restaurant_name">Nome do Restaurante:</string>
     <string name="data_item">Data do pedido:</string>
+    <string name="logo_restaurant">logo restaurante</string>
+    <string name="order_delivery">Pedidos para entregar:</string>
+    <string name="text_value_delivery">Valor da entrega: R$</string>
+    <string name="accept_delivery">Aceitar</string>
+    <string name="text_timer">Tempo:</string>
 </resources>
