@@ -38,7 +38,7 @@ public class CartFragment extends Fragment {
             startActivity(intent);
         }));
 
-        if (Database.CurrentOrder == null || Database.CurrentOrder.Items == null) {
+        if (Database.CurrentOrder == null || Database.CurrentOrder.Items.size() == 0) {
             binding.buttonSheduling.setEnabled(false);
             binding.buttonSheduling.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
             Toast.makeText(getContext(), "Nenhum item no carrinho!", Toast.LENGTH_LONG).show();

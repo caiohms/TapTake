@@ -55,12 +55,11 @@
     <string name="returntoprevious">returnToPreviousHomeScreen</string>
     <string name="background_image_2">background image 2</string>
     <string name="text_payment">Formas de Pagamento</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="carviewrestaurant">CarViewRestaurant</string>
     <string name="name_item">Name Item</string>
     <string name="descriptionitem">Description Item</string>
-    <string name="valor_item">Valor: R$</string>
+    <string name="value_item">Valor: R$</string>
     <string name="imageitem">imageItem</string>
     <string name="_0">0,00</string>
     <string name="text_view_item">Visualizar Item</string>
@@ -77,12 +76,12 @@
     <string name="delivery">Delivery</string>
     <string name="form_of_payment">Forma de pagamento</string>
     <string name="goto_carrinho">Ir para o Carrinho</string>
-    <string name="valor_total_r">Valor Total: R$</string>
-    <string name="quantidade">Quantidade de itens:</string>
-    <string name="valor_total_compra">Valor total da compra: R$</string>
-    <string name="agendamento">Agendamento</string>
-    <string name="text_alterar">Alterar</string>
-    <string name="forma_pagamento">Forma de pagamento escolhido:</string>
+    <string name="value_total">Valor Total: R$</string>
+    <string name="quantity_text">Quantidade de itens:</string>
+    <string name="text_total_purchase_amount">Valor total da compra: R$</string>
+    <string name="text_scheduling">Agendamento</string>
+    <string name="text_change">Alterar</string>
+    <string name="form_payment">Forma de pagamento escolhido:</string>
     <string name="none">nenhuma</string>
     <string name="restaurant_name">Nome do Restaurante:</string>
     <string name="data_item">Data do pedido:</string>

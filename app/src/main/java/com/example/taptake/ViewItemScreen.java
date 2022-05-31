@@ -36,7 +36,7 @@ public class ViewItemScreen extends AppCompatActivity {
         binding.textDescriptionItem.setText(CurrentItemData.Description);
 
         if (Database.CurrentOrderItem != null) {
-            binding.buttonAddItem.setText(R.string.text_alterar);
+            binding.buttonAddItem.setText(R.string.text_change);
             numberOrder = Database.CurrentOrderItem.Quantity;
         }
         binding.quantityValue.setText(String.valueOf(numberOrder));
