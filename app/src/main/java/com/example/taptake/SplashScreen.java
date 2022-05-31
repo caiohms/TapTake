@@ -1,5 +1,6 @@
 package com.example.taptake;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.taptake.data.Database;
 import com.example.taptake.databinding.ActivitySplashScreenBinding;
 
+@SuppressLint("CustomSplashScreen")
 public class SplashScreen extends AppCompatActivity {
 
     ActivitySplashScreenBinding binding;
@@ -45,7 +47,6 @@ public class SplashScreen extends AppCompatActivity {
     public void openLoginScreen() {
 //      Login
         Intent intent = new Intent(this, HomeScreen.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
     }
 

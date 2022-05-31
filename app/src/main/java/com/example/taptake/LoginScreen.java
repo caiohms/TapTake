@@ -52,7 +52,6 @@ public class LoginScreen extends AppCompatActivity {
         if (!error) {
             binding.textLoginEmail.setVisibility(View.INVISIBLE);
             Intent intent = new Intent(this, HomeScreen.class);
-//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         }
     }

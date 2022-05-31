@@ -42,8 +42,7 @@ public class CartFragment extends Fragment {
             binding.buttonSheduling.setEnabled(false);
             binding.buttonSheduling.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
             Toast.makeText(getContext(), "Nenhum item no carrinho!", Toast.LENGTH_LONG).show();
-        }
-        else{
+        } else {
             binding.buttonSheduling.setEnabled(true);
         }
 

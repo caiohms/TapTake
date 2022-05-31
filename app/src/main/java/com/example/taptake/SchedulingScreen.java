@@ -2,7 +2,10 @@ package com.example.taptake;
 
 import android.content.Intent;
 import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.taptake.data.Database;
 import com.example.taptake.databinding.ActivitySchedulingBinding;
 
 public class SchedulingScreen extends AppCompatActivity {
@@ -16,8 +19,8 @@ public class SchedulingScreen extends AppCompatActivity {
         binding = ActivitySchedulingBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.datePicker1.findViewById(R.id.datePicker1);
-        binding.datePicker1.setIs24HourView(true);
+        binding.dateHours.findViewById(R.id.dateHours);
+        binding.dateHours.setIs24HourView(true);
 
         binding.backButtonSchedunlig.setOnClickListener(view -> returnToPreviousRestaurantScreen());
         binding.buttonScheduling.setOnClickListener(view -> openPaymentScrenn());
@@ -28,6 +31,9 @@ public class SchedulingScreen extends AppCompatActivity {
     }
 
     public void openPaymentScrenn() {
+        Database.CurrentOrder.Hour = binding.dateHours.getHour();
+        Database.CurrentOrder.Minute = binding.dateHours.getMinute();
+        Database.CurrentOrder.Date = binding.calendarView.getDate();
         Intent intent = new Intent(this, PaymentScreen.class);
         startActivity(intent);
     }

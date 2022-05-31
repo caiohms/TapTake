@@ -21,6 +21,7 @@ public class ViewItemScreen extends AppCompatActivity {
 
     Item CurrentItemData;
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

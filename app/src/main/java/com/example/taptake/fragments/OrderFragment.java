@@ -3,6 +3,7 @@ package com.example.taptake.fragments;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
+import android.text.format.DateFormat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.taptake.R;
 import com.example.taptake.data.Order;
+
+import java.util.Date;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -46,7 +49,7 @@ public class OrderFragment extends Fragment {
         super.onCreate(savedInstanceState);
     }
 
-    @SuppressLint({"DefaultLocale", "UseCompatLoadingForDrawables"})
+    @SuppressLint({"DefaultLocale", "UseCompatLoadingForDrawables", "SetTextI18n"})
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -60,7 +63,7 @@ public class OrderFragment extends Fragment {
         textNameRestaurant.setText(order.Restaurant.Name);
 
         TextView data_item = view.findViewById(R.id.data_item);
-        data_item.setText(String.valueOf(order.Date));
+        data_item.setText(DateFormat.format("dd/MM/yyyy", new Date(order.Date)).toString() + "  " + order.Hour + ":" + order.Minute);
 
         TextView priceTotal = view.findViewById(R.id.priceTotal);
         priceTotal.setText(String.format("%.2f", order.GetPrice()));
@@ -71,3 +74,4 @@ public class OrderFragment extends Fragment {
         return view;
     }
 }
+
