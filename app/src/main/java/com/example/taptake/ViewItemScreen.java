@@ -46,7 +46,7 @@ public class ViewItemScreen extends AppCompatActivity {
                 Database.CurrentOrderItem.Quantity = numberOrder;
 
                 OrderItemAdapter.Instance.notifyDataSetChanged();
-                CartFragment.Instance.UpdatePrice();
+                CartFragment.Instance.UpdateCart();
 
             } else {
                 OrderItem NewOrderItem = new OrderItem(CurrentItemData, numberOrder);
@@ -75,7 +75,7 @@ public class ViewItemScreen extends AppCompatActivity {
                     Database.CurrentOrder = null;
 
                 OrderItemAdapter.Instance.notifyDataSetChanged();
-                CartFragment.Instance.UpdatePrice();
+                CartFragment.Instance.UpdateCart();
 
                 onBackPressed();
 

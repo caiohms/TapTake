@@ -71,6 +71,9 @@ public class OrderFragment extends Fragment {
         TextView quantityItem = view.findViewById(R.id.quantityItem);
         quantityItem.setText(String.valueOf(order.GetQuantity()));
 
+        ImageView paymentImage = view.findViewById(R.id.image_payment_order);
+        paymentImage.setImageDrawable(ctx.getResources().getDrawable(ctx.getResources().getIdentifier(order.Payment.Image, "drawable", ctx.getPackageName())));
+
         return view;
     }
 }

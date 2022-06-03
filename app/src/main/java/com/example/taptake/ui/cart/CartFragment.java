@@ -38,6 +38,18 @@ public class CartFragment extends Fragment {
             startActivity(intent);
         }));
 
+        UpdateCart();
+
+        binding.buttonSheduling.setOnClickListener(view -> {
+            Intent intent = new Intent(getActivity(), SchedulingScreen.class);
+            startActivity(intent);
+        });
+
+        return root;
+    }
+
+    @SuppressLint("DefaultLocale")
+    public void UpdateCart() {
         if (Database.CurrentOrder == null || Database.CurrentOrder.Items.size() == 0) {
             binding.buttonSheduling.setEnabled(false);
             binding.buttonSheduling.setBackgroundTintList(ColorStateList.valueOf(Color.GRAY));
@@ -46,18 +58,6 @@ public class CartFragment extends Fragment {
             binding.buttonSheduling.setEnabled(true);
         }
 
-        binding.buttonSheduling.setOnClickListener(view -> {
-            Intent intent = new Intent(getActivity(), SchedulingScreen.class);
-            startActivity(intent);
-        });
-
-        UpdatePrice();
-
-        return root;
-    }
-
-    @SuppressLint("DefaultLocale")
-    public void UpdatePrice() {
         double value = 0;
 
         if (Database.CurrentOrder != null)

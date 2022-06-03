@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -32,15 +33,14 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="135dp"
-            android:text="@string/data_item"/>
+            android:text="@string/data_item" />
 
         <TextView
             android:id="@+id/data_item"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="125dp"
-            android:layout_marginTop="135dp"
-            />
+            android:layout_marginTop="135dp" />
 
         <TextView
             android:id="@+id/textQuantityItem"
@@ -82,6 +82,14 @@
             android:layout_marginTop="20dp"
             android:contentDescription="@string/imageitem"
             android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/image_payment_order"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="100dp"
+            android:contentDescription="@string/imageitem" />
 
 
     </androidx.cardview.widget.CardView>

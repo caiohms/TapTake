@@ -1,6 +1,11 @@
 package com.example.taptake.data;
 
+import android.annotation.SuppressLint;
+
+import com.example.taptake.fragments.PaymentFragment;
+
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class Database {
 
@@ -14,6 +19,11 @@ public class Database {
     public static ArrayList<FormPayment> Payments = new ArrayList<>();
     public static ArrayList<Delivery> Delivery = new ArrayList<>();
 
+    // Not really database but okay.
+    @SuppressLint("StaticFieldLeak")
+    public static PaymentFragment CurrentPaymentMethodFragment = null;
+
+
     public static void SetCurrentItem(Item Item) {
         CurrentItem = Item;
         CurrentOrderItem = null;
@@ -25,14 +35,13 @@ public class Database {
     }
 
     public static void LoadDatabase() {
+        long InitalTime = Calendar.getInstance().getTimeInMillis();
 
         {
             Delivery delivery1 = new Delivery();
             delivery1.Name = "StarBucks";
             delivery1.Logo = "@drawable/logorestaurant_starbucks";
-            delivery1.Hour = 0;
-            delivery1.Minute = 50;
-            delivery1.Seconds = 0;
+            delivery1.Time = InitalTime + 3000000;
             delivery1.Price = 10.0;
 
             Delivery.add(delivery1);
@@ -41,9 +50,7 @@ public class Database {
             Delivery delivery2 = new Delivery();
             delivery2.Name = "Burger King";
             delivery2.Logo = "@drawable/logorestaurant_burguerking";
-            delivery2.Hour = 0;
-            delivery2.Minute = 30;
-            delivery2.Seconds = 0;
+            delivery2.Time = InitalTime + 1800000;
             delivery2.Price = 7.0;
 
             Delivery.add(delivery2);
@@ -52,11 +59,8 @@ public class Database {
             Delivery delivery3 = new Delivery();
             delivery3.Name = "StarBucks";
             delivery3.Logo = "@drawable/logorestaurant_starbucks";
-            delivery3.Hour = 0;
-            delivery3.Minute = 40;
-            delivery3.Seconds = 0;
-            delivery3.Price = 5.0;
-
+            delivery3.Time = InitalTime + 2400000;
+            delivery3.Price = 4.0;
             Delivery.add(delivery3);
         }
         {
@@ -668,14 +672,14 @@ public class Database {
                     Giraffas.Items.add(Bisteca);
                 }
                 {
-                    Item Coxxao = new Item();
-                    Coxxao.Name = "Churrasco de Coxxão";
-                    Coxxao.Description = "1 porção de coxa e sobrecoxa desossadas e temperadas (aprox. 195 g). Acompanha 2 linguiças suínas (aprox.60 g cada).";
-                    Coxxao.Image = "image_coxxao";
-                    Coxxao.Category = "Churrasco";
-                    Coxxao.Price = 60.99;
+                    Item Coxao = new Item();
+                    Coxao.Name = "Churrasco de Coxão";
+                    Coxao.Description = "1 porção de coxa e sobrecoxa desossadas e temperadas (aprox. 195 g). Acompanha 2 linguiças suínas (aprox.60 g cada).";
+                    Coxao.Image = "image_coxao";
+                    Coxao.Category = "Churrasco";
+                    Coxao.Price = 60.99;
 
-                    Giraffas.Items.add(Coxxao);
+                    Giraffas.Items.add(Coxao);
                 }
                 {
                     Item BistecasSuinas = new Item();
